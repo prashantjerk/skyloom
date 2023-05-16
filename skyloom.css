@@ -1,4 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+@font-face {
+  font-family: "Intro Rust";
+  src: url("fonts/intro-rust/IntroRust-Base.woff2") format("woff2"),
+    url("fonts/intro-rust/IntroRust-Base.woff") format("woff"),
+    url("fonts/intro-rust/IntroRust-Base.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Knockout Cruiserweight";
+  src: url("fonts/Knockout HTF52-Cruiserweight Regular/Knockout HTF52-Cruiserweight Regular.otf")
+    format("opentype");
+}
+
 :root {
   /* color */
   --background-color: #0c0d16;
@@ -10,4 +24,7 @@
   --descriptive-text: 16.1px;
   --lets-talk: 13.6px;
   --footer-heading: 30.2px;
+}
+
+p {
 }
