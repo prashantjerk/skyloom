@@ -114,7 +114,6 @@ body {
   margin-top: 90px;
   margin-left: 70px;
   width: 200px;
-  border: 1px red solid;
 }
 
 .span1,
@@ -129,4 +128,61 @@ body {
 .span2 {
   line-height: 5px;
   color: var(--bluish-color);
+}
+
+.carousel {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 490px;
+  width: calc(100vw-90px);
+  margin-top: 70px;
+}
+
+.carousel-image {
+  width: 300px;
+  object-fit: cover;
+}
+
+.carousel_left {
+  height: fit-content;
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.carousel_main {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel_left > .carousel-image:nth-child(1) {
+  height: 370px;
+  opacity: 20%;
+}
+
+.carousel_left > .carousel-image:nth-child(2) {
+  height: 475px;
+  opacity: 50%;
+}
+
+.carousel_main > .carousel-image:nth-child(1) {
+  position: absolute;
+  height: 650px;
+  z-index: 1111;
+}
+
+.carousel_main > .carousel-image:nth-child(2) {
+  aspect-ratio: 1/1;
+  width: 600px;
+  z-index: 111;
+}
+
+.last-carousel {
+  height: 350px;
+  opacity: 50%;
 }
