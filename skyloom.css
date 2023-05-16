@@ -26,5 +26,107 @@
   --footer-heading: 30.2px;
 }
 
-p {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--background-color);
+  overflow-x: hidden;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+}
+
+.first_page_img {
+  margin-top: -35px;
+  background-position: center;
+  height: 100%;
+  width: 100vw;
+  object-fit: cover;
+}
+
+.navbar {
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+.logo {
+  height: 110px;
+  width: 280px;
+  object-fit: cover;
+}
+
+.material-symbols-outlined.menu {
+  color: white;
+  font-size: 60px;
+}
+
+.hero {
+  width: calc(100vw-80px);
+}
+
+.tagline {
+  position: absolute;
+  top: 280px;
+  left: 70px;
+  width: 800px;
+}
+
+.tagline_quote {
+  color: white;
+  font-size: 57px;
+  text-transform: uppercase;
+  font-family: "Intro Rust", sans-serif;
+  line-height: 55px;
+}
+
+.second_tagline {
+  color: white;
+  font-size: 25px;
+  margin-top: 5px;
+  letter-spacing: 1px;
+  word-spacing: 5px;
+  font-family: "Knockout Cruiserweight", sans-serif;
+}
+
+.hanging_image_section {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: fit-content;
+}
+
+.hanging_img {
+  height: 950px;
+}
+
+/* Our Work  */
+.our_work_title {
+  margin-top: 90px;
+  margin-left: 70px;
+  width: 200px;
+  border: 1px red solid;
+}
+
+.span1,
+.span2 {
+  padding: 0;
+  font-size: 60px;
+  color: white;
+  text-transform: uppercase;
+  font-family: "Intro Rust", sans-serif;
+}
+
+.span2 {
+  line-height: 5px;
+  color: var(--bluish-color);
 }
