@@ -1,0 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+:root {
+  /* color */
+  --background-color: #0c0d16;
+  --bluish-color: #11f8c8;
+
+  /* font size */
+  --section-header: 54.9px;
+  --summary-text: 25.3px;
+  --descriptive-text: 16.1px;
+  --lets-talk: 13.6px;
+  --footer-heading: 30.2px;
+}
