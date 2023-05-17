@@ -190,7 +190,6 @@ body {
 }
 
 /* Clients */
-
 .clients {
   display: flex;
   flex-direction: column;
@@ -198,6 +197,7 @@ body {
 }
 
 .title_row {
+  user-select: none;
   font-family: "Intro Rust", sans-serif;
   text-transform: uppercase;
   font-size: 60px;
@@ -218,25 +218,33 @@ body {
   background-color: var(--bluish-color);
 }
 
-.clients_img {
-  margin-top: 90px;
-  margin-left: -15px;
-  width: 100vw;
+.clientlist {
+  width: 1362px;
+  margin-top: 40px;
+  margin-left: 70px;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  row-gap: 15px;
+  column-gap: 130px;
 }
+
+/* Partners */
 .partners {
-  height: 290px;
   width: 1362px;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: repeat(4, 1fr); 
-  grid-template-rows: repeat(3, 1fr); 
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   row-gap: 40px;
   column-gap: 160px;
 }
+.partners {
+  height: 290px;
+}
 
+.client_logo,
 .partners_logo {
-  margin-top: 10px;
-  margin-bottom: 10px;
   height: 100px;
 }
 /* Let's Talk  */
