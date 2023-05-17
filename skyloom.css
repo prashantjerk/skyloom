@@ -39,7 +39,6 @@ body {
   overflow-x: hidden;
   overflow-y: scroll;
   scroll-behavior: smooth;
-  position: relative;
 }
 
 .header_img {
@@ -264,7 +263,6 @@ body {
 .footer_title {
   display: flex;
   justify-content: space-between;
-  z-index: 11111;
   position: absolute;
   top: 0;
 }
@@ -283,7 +281,6 @@ body {
 .lets_talk_img {
   margin-left: -175px;
   height: 500px;
-  z-index: 11111;
 }
 
 form {
@@ -302,17 +299,13 @@ form {
   font-weight: lighter;
 }
 
-.form_icon {
-  height: 15px;
-}
 .each_from_section {
   margin-top: 8px;
 }
 
-.input_wrapper {
+.input_wrapper,
+.scope {
   margin-top: 8px;
-  display: flex;
-  align-items: center;
   border-radius: 10px;
   background-color: rgba(255, 255, 255, 0.3);
   width: 100%;
@@ -320,19 +313,23 @@ form {
 }
 
 .input_field {
+  color: rgb(255, 255, 255);
+  opacity: 100%;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
   background: none;
   border: none;
   outline: none;
 }
 
-#scope_wrapper {
-  position: relative;
+.scope {
+  padding: 10px;
+  border: none;
+  color: rgb(255, 255, 255);
   height: 80px;
-}
-
-#scope_icon {
-  position: absolute;
-  top: 10px;
+  resize: none;
+  outline: none;
 }
 
 #submit_btn {
@@ -347,4 +344,87 @@ form {
   position: absolute;
   right: 0px;
   bottom: 0;
+}
+
+.footer {
+  position: relative;
+  margin-top: 900px;
+  height: 300px;
+  width: 1362px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+.footer_divs {
+  color: white;
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+}
+
+.footer_div_title {
+  font-family: "Intro Rust", sans-serif;
+  color: var(--bluish-color);
+  font-size: 2.5em;
+  text-transform: uppercase;
+}
+
+.each_contact {
+  display: flex;
+  height: 70px;
+  width: 250px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.footer_icon {
+  height: 2.5em;
+}
+
+.contact_text,
+.footer_text {
+  font-family: "Knockout Cruiserweight", sans-serif;
+  font-weight: lighter;
+}
+
+.footer_divs > .footer_text {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 1.5em;
+  height: 40px;
+}
+
+.bottom_footer {
+  margin: 30px 32px auto 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1402px;
+  height: 100px;
+  position: relative;
+}
+.bottom_logo {
+  position: relative;
+  height: 110px;
+  width: 270px;
+  object-fit: cover;
+}
+
+.each_bottom_footer_logo {
+  height: 50px;
+}
+
+#footer_tagline{
+  position: relative;
+  color: white;
+  font-family: "Intro Rust", sans-serif;
+  font-size: 0.8em;
+  word-spacing: 7px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 120px;
 }

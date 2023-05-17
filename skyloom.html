@@ -12,6 +12,7 @@
     <title>skyloom</title>
   </head>
   <body class="landing_page">
+    <!-- First Page  -->
     <section class="first_page">
       <img src="First page/first-page.png" alt="image" class="header_img" />
       <nav class="navbar">
@@ -37,6 +38,7 @@
       </div>
     </div>
 
+    <!-- Our Work  -->
     <section class="our_work">
       <div class="our_work_title">
         <span class="span1"> Our </span><span class="span2">Work</span>
@@ -61,6 +63,7 @@
       </div>
     </section>
 
+    <!-- Clients  -->
     <section class="clients">
       <div class="title_row">
         <p class="title">Clients</p>
@@ -95,6 +98,7 @@
       </div>
     </section>
 
+    <!-- Services  -->
     <section class="services">
       <div class="title_row">
         <p class="title">Services</p>
@@ -107,6 +111,8 @@
         <p class="title">Partnerships</p>
         <span class="line"></span>
       </div>
+
+      <!-- Partnerships  -->
       <div class="partners">
         <img src="Partnerships/fb.png" class="partners_logo" alt="Facebook" />
         <img src="Partnerships/tiktok.png" class="partners_logo" alt="TikTok" />
@@ -126,6 +132,8 @@
         <img src="Partnerships/twilio.png" class="partners_logo" alt="Twilio" />
       </div>
     </section>
+
+    <!-- Let's talk  -->
     <section class="lets_talk">
       <img
         src="Let's Talk and Footer Backkround.png"
@@ -143,34 +151,92 @@
           <div class="each_from_section">
             <label for="name" class="labels">Name</label><br />
             <div class="input_wrapper">
-              <img src="Social Icons/21.png" class="form_icon" alt="Name" />
-              <input type="text" id="name" class="input_field" />
+              <input
+                type="text"
+                id="name"
+                class="input_field"
+                placeholder="Bob"
+              />
             </div>
           </div>
           <div class="each_from_section">
             <label for="email" class="labels">Email</label><br />
             <div class="input_wrapper">
-              <img src="Social Icons/21.png" class="form_icon" alt="Email" />
-
-              <input type="email" id="email" class="input_field" />
+              <input
+                type="email"
+                id="email"
+                class="input_field"
+                placeholder="xyz@example.com"
+              />
             </div>
           </div>
           <div class="each_from_section">
             <label for="scope" class="labels">Project Scope</label><br />
-            <div class="input_wrapper" id="scope_wrapper">
-              <img
-                src="Social Icons/21.png"
-                class="form_icon"
-                alt="Project Scope"
-                id="scope_icon"
-              />
-              <input type="text" id="scope" class="input_field" />
+            <div id="scope_wrapper">
+              <textarea class="scope"></textarea>
             </div>
           </div>
           <button type="submit" value="submit" id="submit_btn">Submit</button>
         </form>
       </div>
     </section>
+
+    <section class="footer">
+      <div class="footer_divs footer_contact">
+        <p class="footer_div_title">Contact</p>
+        <div class="each_contact">
+          <img
+            src="Call to Action in footer/location.png"
+            class="footer_icon"
+            alt="Location"
+          />
+          <p class="contact_text">Saudia Arab, Riyadh, Exit 7</p>
+        </div>
+
+        <div class="each_contact">
+          <img
+            src="Call to Action in footer/email.png"
+            class="footer_icon"
+            alt="Email"
+          />
+          <p class="contact_text">hello@qiratven.com</p>
+        </div>
+
+        <div class="each_contact">
+          <img
+            src="Call to Action in footer/whatsapp.png"
+            class="footer_icon"
+            alt="Whatsapp"
+          />
+          <p class="contact_text">+966594542796</p>
+        </div>
+      </div>
+      <div class="footer_divs footer_explore">
+        <p class="footer_div_title">Explore</p>
+        <p class="footer_text explore_text">Contact</p>
+        <p class="footer_text explore_text">About</p>
+        <p class="footer_text explore_text">Services</p>
+        <p class="footer_text explore_text">Clients</p>
+      </div>
+      <div class="footer_divs footer_services">
+        <p class="footer_div_title">Services</p>
+        <p class="footer_text servives_text">Paid Media</p>
+        <p class="footer_text servives_text">Growth Hacking</p>
+        <p class="footer_text servives_text">Strategy</p>
+        <p class="footer_text servives_text">Communication</p>
+        <p class="footer_text servives_text">Decision Sciences</p>
+      </div>
+    </section>
+    <section class="bottom_footer">
+      <img src="First page/logo.png" alt="Logo" class="bottom_logo" />
+      <div class="bottom_footer_logo">
+        <img src="Social Icons/facebook.png" class="each_bottom_footer_logo" alt="Facebook">
+        <img src="Social Icons/tiktok.png" class="each_bottom_footer_logo" alt="tiktok">
+        <img src="Social Icons/linkedin.png" class="each_bottom_footer_logo" alt="linkedin">
+        <img src="Social Icons/insta.png" class="each_bottom_footer_logo" alt="insta">
+      </div>
+    </section>
+<p id="footer_tagline">A Qirat Ventures Company.</p>
     <script src="skyloom.js"></script>
   </body>
 </html>
