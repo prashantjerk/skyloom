@@ -37,7 +37,7 @@ body {
   width: 100vw;
   background-color: var(--background-color);
   overflow-x: hidden;
-  overflow-x: scroll;
+  overflow-y: scroll;
   scroll-behavior: smooth;
   position: relative;
 }
@@ -205,6 +205,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 1362px;
   margin-top: 160px;
   margin-left: 70px;
   margin-right: 110px;
@@ -243,14 +244,89 @@ body {
 }
 
 .footer_title {
+  display: flex;
+  justify-content: space-between;
   z-index: 11111;
   position: absolute;
   top: 0;
 }
 
-.lets_talk_img {
-  width: 300px;
+.footer_top {
+  position: absolute;
+  top: 375px;
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
   z-index: 11111;
+}
 
-  aspect-ratio: 1/1;
+.lets_talk_img {
+  margin-left: -175px;
+  height: 500px;
+  z-index: 11111;
+}
+
+form {
+  position: relative;
+  width: 600px;
+  height: 300px;
+  margin-right: 82px;
+  margin-top: 100px;
+}
+
+.each_from_section > label {
+  color: white;
+  font-family: "Knockout Cruiserweight", sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+.form_icon {
+  height: 15px;
+}
+.each_from_section {
+  margin-top: 8px;
+}
+
+.input_wrapper {
+  margin-top: 8px;
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 100%;
+  height: 30px;
+}
+
+.input_field {
+  background: none;
+  border: none;
+  outline: none;
+}
+
+#scope_wrapper {
+  position: relative;
+  height: 80px;
+}
+
+#scope_icon {
+  position: absolute;
+  top: 10px;
+}
+
+#submit_btn {
+  font-family: "Knockout Cruiserweight", sans-serif;
+  font-weight: lighter;
+  text-transform: uppercase;
+  height: 30px;
+  width: 100px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--bluish-color);
+  position: absolute;
+  right: 0px;
+  bottom: 0;
 }

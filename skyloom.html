@@ -99,10 +99,36 @@
       </div>
 
       <div class="footer_top">
-        <img src="Let's Talk.png" alt="Image" class="lets_talk_img"/>
+        <img src="Let's Talk.png" alt="Image" class="lets_talk_img" />
         <form>
-          <label for="username" class="labels">Username</label><br />
-          <input type="text" id="username" placeholder="Robert Cowell" />
+          <div class="each_from_section">
+            <label for="name" class="labels">Name</label><br />
+            <div class="input_wrapper">
+              <img src="Social Icons/21.png" class="form_icon" alt="Name" />
+              <input type="text" id="name" class="input_field" />
+            </div>
+          </div>
+          <div class="each_from_section">
+            <label for="email" class="labels">Email</label><br />
+            <div class="input_wrapper">
+              <img src="Social Icons/21.png" class="form_icon" alt="Email" />
+
+              <input type="email" id="email" class="input_field" />
+            </div>
+          </div>
+          <div class="each_from_section">
+            <label for="scope" class="labels">Project Scope</label><br />
+            <div class="input_wrapper" id="scope_wrapper">
+              <img
+                src="Social Icons/21.png"
+                class="form_icon"
+                alt="Project Scope"
+                id="scope_icon"
+              />
+              <input type="text" id="scope" class="input_field" />
+            </div>
+          </div>
+          <button type="submit" value="submit" id="submit_btn">Submit</button>
         </form>
       </div>
     </section>
