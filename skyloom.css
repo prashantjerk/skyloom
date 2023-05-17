@@ -33,14 +33,16 @@
 }
 
 body {
-  background-color: var(--background-color);
-  overflow-x: hidden;
   height: 100vh;
   width: 100vw;
+  background-color: var(--background-color);
+  overflow-x: hidden;
+  overflow-x: scroll;
+  scroll-behavior: smooth;
   position: relative;
 }
 
-.first_page_img {
+.header_img {
   margin-top: -35px;
   background-position: center;
   height: 100%;
@@ -111,9 +113,9 @@ body {
 
 /* Our Work  */
 .our_work_title {
-  margin-top: 90px;
   margin-left: 70px;
   width: 200px;
+  user-select: none;
 }
 
 .span1,
@@ -185,4 +187,70 @@ body {
 .last-carousel {
   height: 350px;
   opacity: 50%;
+}
+
+/* Clients */
+
+.clients {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+.title_row {
+  font-family: "Intro Rust", sans-serif;
+  text-transform: uppercase;
+  font-size: 60px;
+  color: var(--bluish-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 160px;
+  margin-left: 70px;
+  margin-right: 110px;
+}
+
+.line {
+  width: 950px;
+  height: 8px;
+  border-radius: 2px;
+  background-color: var(--bluish-color);
+}
+
+.clients_img {
+  margin-top: 90px;
+  margin-left: -15px;
+  width: 100vw;
+}
+.partnerships_img {
+  width: 96.5vw;
+  margin-top: -230px;
+  margin-left: 35px;
+}
+
+/* Let's Talk  */
+.lets_talk {
+  display: block;
+  position: relative;
+  margin-top: -220px;
+  user-select: none;
+}
+.footer_img {
+  width: 100vw;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+}
+
+.footer_title {
+  z-index: 11111;
+  position: absolute;
+  top: 0;
+}
+
+.lets_talk_img {
+  width: 300px;
+  z-index: 11111;
+
+  aspect-ratio: 1/1;
 }
