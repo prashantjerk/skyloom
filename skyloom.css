@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap");
 @font-face {
   font-family: "Intro Rust";
   src: url("fonts/intro-rust/IntroRust-Base.woff2") format("woff2"),
@@ -417,7 +416,7 @@ form {
   height: 50px;
 }
 
-#footer_tagline{
+#footer_tagline {
   position: relative;
   color: white;
   font-family: "Intro Rust", sans-serif;
@@ -427,4 +426,53 @@ form {
   text-transform: uppercase;
   text-align: center;
   margin-top: 120px;
+}
+
+.services_block {
+  /* border: 2px red solid; */
+  width: 1362px;
+  margin-top: 200px;
+  margin-left: 80px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 50px;
+  column-gap: 120px;
+  color: white;
+}
+
+.each_service {
+  border: 5px white solid;
+  height: 500px;
+  border-radius: 15px;
+  position: relative;
+}
+.service_icon {
+  position: absolute;
+  left: -30px;
+  top: -240px;
+  height: 450px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.service_body .service_description {
+  text-align: justify;
+}
+
+.service_body {
+  position: absolute;
+  top: 180px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.service_body .service_title {
+  font-family: "Intro Rust", sans-serif;
+  font-size: 2em;
+  color: white;
+}
+
+.service_body .service_description {
+  font-family: "inter", sans-serif;
 }
