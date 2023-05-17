@@ -223,17 +223,27 @@ body {
   margin-left: -15px;
   width: 100vw;
 }
-.partnerships_img {
-  width: 96.5vw;
-  margin-top: -230px;
-  margin-left: 35px;
+.partners {
+  height: 290px;
+  width: 1362px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); 
+  grid-template-rows: repeat(3, 1fr); 
+  row-gap: 40px;
+  column-gap: 160px;
 }
 
+.partners_logo {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 100px;
+}
 /* Let's Talk  */
 .lets_talk {
   display: block;
   position: relative;
-  margin-top: -220px;
+  /* margin-top: -220px; */
   user-select: none;
 }
 .footer_img {
