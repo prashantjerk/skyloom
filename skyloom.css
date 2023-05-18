@@ -131,61 +131,61 @@ body {
   color: var(--bluish-color);
 }
 
-.our_work .carousel {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  height: 490px;
-  width: calc(100vw-90px);
-  margin-top: 70px;
+/* Swiper  */
+
+.carousel {
+  width: 100%;
 }
 
-.carousel .carousel-image {
-  width: 300px;
+.width_util {
+  width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.yello_image {
+  position: absolute;
+  right: 330px;
+  width: 600px;
+  aspect-ratio: 1/1;
   object-fit: cover;
 }
 
-.carousel .carousel_left {
-  height: fit-content;
-  width: 600px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 50px;
-}
-
-.carousel .carousel_main {
-  position: relative;
+.coursel_swiper {
   display: flex;
   align-items: center;
-  justify-content: center;
+  position: absolute;
+  left: 50%;
+  right: 50%;
+  transform: translateX(-50%);
+  height: 600px;
 }
 
-.carousel_left .carousel-image:nth-child(1) {
+.swiper_image1,
+.swiper_image2,
+.center_image,
+.last_image {
+  height: 300px;
+  aspect-ratio: 2/3;
+  object-fit: cover;
+}
+
+.swiper_image1 {
   height: 370px;
   opacity: 20%;
 }
 
-.carousel_left .carousel-image:nth-child(2) {
+.swiper_image2 {
   height: 475px;
   opacity: 50%;
+  margin-right: 50px;
 }
-
-.carousel_main .carousel-image:nth-child(1) {
-  border: 1px red solid;
-  position: absolute;
+.center_image {
   height: 650px;
-  z-index: 1111;
+  margin-left: 10px;
 }
 
-.carousel_main .carousel-image:nth-child(2) {
-  aspect-ratio: 1/1;
-  width: 600px;
-  z-index: 111;
-}
-
-.carousel_last .last-carousel {
-  height: 350px;
+.last_image {
+  height: 475px;
   opacity: 50%;
 }
 
@@ -194,6 +194,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: start;
+  margin-top: 700px;
 }
 
 .clients .title_row,
