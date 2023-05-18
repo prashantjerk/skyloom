@@ -1,0 +1,70 @@
+.footer {
+  margin-top: 130px;
+}
+
+.case_study_footer .footer_img {
+  height: 670px;
+  object-fit: cover;
+}
+
+.case_study_footer .bottom_footer {
+  margin-top: 70px;
+}
+
+.width_util {
+  width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Stat  */
+.stats {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.five9_stats {
+  width: 500px;
+}
+.each_stat {
+  width: 300px;
+}
+
+.each_stat .percentage {
+  font-family: var(--primary-font), sans-serif;
+  color: var(--bluish-color);
+  font-size: 2em;
+}
+
+.stat_description {
+  margin-top: 10px;
+  line-height: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 590;
+  text-align: left;
+}
+
+.each_main_description_block {
+  margin-top: 50px;
+}
+
+.section_title {
+  font-family: var(--primary-font), sans-serif;
+  color: var(--bluish-color);
+  font-size: 2em;
+}
+
+.section_description {
+  text-align: justify;
+  line-height: 25px;
+  margin-top: 15x;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+
+.para {
+  margin-top: 20px;
+}

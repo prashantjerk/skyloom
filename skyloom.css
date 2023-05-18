@@ -306,7 +306,7 @@ body {
   height: 100px;
 }
 /* Let's Talk  */
-.landing_page .lets_talk {
+.lets_talk {
   display: block;
   position: relative;
   user-select: none;
@@ -405,7 +405,7 @@ form #submit_btn {
   bottom: 0;
 }
 
-.landing_page .footer {
+.footer {
   position: relative;
   margin-top: 800px;
   height: 300px;
