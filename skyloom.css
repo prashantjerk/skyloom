@@ -105,6 +105,13 @@ body {
 .hanging_image_section .hanging_img {
   height: 950px;
 }
+.mouse-icon{
+  position: absolute;
+  right: 70px;
+  height: 70px;
+  object-fit: cover;
+
+}
 
 /* Our Work  */
 .landing_page .our_work {
