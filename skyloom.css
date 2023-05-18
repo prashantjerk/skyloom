@@ -133,60 +133,84 @@ body {
 
 /* Swiper  */
 
-.carousel {
-  width: 100%;
-}
-
-.width_util {
-  width: 1400px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.yello_image {
+.yellow-img {
   position: absolute;
-  right: 330px;
-  width: 600px;
+  left: 712px;
+  top: -65px;
+  height: 550px;
   aspect-ratio: 1/1;
   object-fit: cover;
 }
 
-.coursel_swiper {
-  display: flex;
-  align-items: center;
+#swiper {
+  margin-top: 100px;
+  position: relative;
+  height: 500px;
+}
+
+
+#swiper .swiper-slider {
+  width: 100%;
   position: absolute;
+  top: 60%;
   left: 50%;
-  right: 50%;
-  transform: translateX(-50%);
-  height: 600px;
+  transform: translate(-50%, -50%);
 }
 
-.swiper_image1,
-.swiper_image2,
-.center_image,
-.last_image {
-  height: 300px;
-  aspect-ratio: 2/3;
+@media (max-width: 500px) {
+  #swiper .swiper-slider {
+    height: 45rem;
+  }
+}
+
+.swiper-slide {
+  width: 500px !important;
+  height: 42rem !important;
+}
+
+@media (max-width: 500px) {
+  .swiper-slide {
+    width: 28rem !important;
+    height: 36rem !important;
+  }
+  .swiper-slide .swiper-slide-img img {
+    width: 500px !important;
+    height: 36rem !important;
+    aspect-ratio: 2/3 !important;
+    object-fit: cover !important;
+  }
+}
+
+.swiper-slide .swiper-slide-img img {
+  height: 530px;
   object-fit: cover;
+  border-radius: 2rem;
 }
 
-.swiper_image1 {
-  height: 370px;
-  opacity: 20%;
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+  display: none;
 }
 
-.swiper_image2 {
-  height: 475px;
-  opacity: 50%;
-  margin-right: 50px;
-}
-.center_image {
-  height: 650px;
-  margin-left: 10px;
+.swiper-slide {
+  opacity: 0.5;
 }
 
-.last_image {
-  height: 475px;
-  opacity: 50%;
+.swiper-slide-active {
+  opacity: 1;
+}
+
+.swiper-slide-next,
+.swiper-slide-prev {
+  opacity: 0.5;
+}
+
+.swiper-slide:last-child {
+  opacity: 0;
+}
+
+.swiper-slide-prev.swiper-slide-active ~ .swiper-slide {
+  opacity: 0.25;
 }
 
 /* Clients */
@@ -194,7 +218,6 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: start;
-  margin-top: 700px;
 }
 
 .clients .title_row,
@@ -488,4 +511,13 @@ form #submit_btn {
   text-transform: uppercase;
   text-align: center;
   margin-top: 170px;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
 }
