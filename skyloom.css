@@ -17,12 +17,9 @@
   --background-color: #0c0d16;
   --bluish-color: #11f8c8;
 
-  /* font size */
-  --section-header: 54.9px;
-  --summary-text: 25.3px;
-  --descriptive-text: 16.1px;
-  --lets-talk: 13.6px;
-  --footer-heading: 30.2px;
+  /* font  */
+  --primary-font: "Intro Rust";
+  --secondary-font: "Knockout Cruiserweight";
 }
 
 * {
@@ -85,7 +82,7 @@ body {
   color: white;
   font-size: 57px;
   text-transform: uppercase;
-  font-family: "Intro Rust", sans-serif;
+  font-family: var(--primary-font), sans-serif;
   line-height: 55px;
 }
 
@@ -95,7 +92,7 @@ body {
   margin-top: 5px;
   letter-spacing: 1px;
   word-spacing: 5px;
-  font-family: "Knockout Cruiserweight", sans-serif;
+  font-family: var(--secondary-font), sans-serif;
 }
 
 .hanging_image_section {
@@ -110,6 +107,10 @@ body {
 }
 
 /* Our Work  */
+.our_work {
+  margin-top: 160px;
+}
+
 .our_work_title {
   margin-left: 70px;
   width: 200px;
@@ -122,7 +123,7 @@ body {
   font-size: 60px;
   color: white;
   text-transform: uppercase;
-  font-family: "Intro Rust", sans-serif;
+  font-family: var(--primary-font), sans-serif;
 }
 
 .span2 {
@@ -196,7 +197,7 @@ body {
 
 .title_row {
   user-select: none;
-  font-family: "Intro Rust", sans-serif;
+  font-family: var(--primary-font), sans-serif;
   text-transform: uppercase;
   font-size: 60px;
   color: var(--bluish-color);
@@ -204,7 +205,6 @@ body {
   align-items: center;
   justify-content: space-between;
   width: 1362px;
-  margin-top: 160px;
   margin-left: 70px;
   margin-right: 110px;
 }
@@ -227,207 +227,13 @@ body {
   column-gap: 130px;
 }
 
-/* Partners */
-.partners {
-  width: 1362px;
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  row-gap: 40px;
-  column-gap: 160px;
-}
-.partners {
-  height: 290px;
+.clients,
+.services,
+.partnerships {
+  margin-top: 160px;
 }
 
-.client_logo,
-.partners_logo {
-  height: 100px;
-}
-/* Let's Talk  */
-.lets_talk {
-  display: block;
-  position: relative;
-  /* margin-top: -220px; */
-  user-select: none;
-}
-.footer_img {
-  width: 100vw;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-}
-
-.footer_title {
-  display: flex;
-  justify-content: space-between;
-  position: absolute;
-  top: 0;
-}
-
-.footer_top {
-  position: absolute;
-  top: 375px;
-  height: fit-content;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: start;
-  z-index: 11111;
-}
-
-.lets_talk_img {
-  margin-left: -175px;
-  height: 500px;
-}
-
-form {
-  position: relative;
-  width: 600px;
-  height: 300px;
-  margin-right: 82px;
-  margin-top: 100px;
-}
-
-.each_from_section > label {
-  color: white;
-  font-family: "Knockout Cruiserweight", sans-serif;
-  text-transform: uppercase;
-  font-size: 16px;
-  font-weight: lighter;
-}
-
-.each_from_section {
-  margin-top: 8px;
-}
-
-.input_wrapper,
-.scope {
-  margin-top: 8px;
-  border-radius: 10px;
-  background-color: rgba(255, 255, 255, 0.3);
-  width: 100%;
-  height: 30px;
-}
-
-.input_field {
-  color: rgb(255, 255, 255);
-  opacity: 100%;
-  height: 100%;
-  width: 100%;
-  padding: 10px;
-  background: none;
-  border: none;
-  outline: none;
-}
-
-.scope {
-  padding: 10px;
-  border: none;
-  color: rgb(255, 255, 255);
-  height: 80px;
-  resize: none;
-  outline: none;
-}
-
-#submit_btn {
-  font-family: "Knockout Cruiserweight", sans-serif;
-  font-weight: lighter;
-  text-transform: uppercase;
-  height: 30px;
-  width: 100px;
-  border-radius: 10px;
-  border: none;
-  background-color: var(--bluish-color);
-  position: absolute;
-  right: 0px;
-  bottom: 0;
-}
-
-.footer {
-  position: relative;
-  margin-top: 900px;
-  height: 300px;
-  width: 1362px;
-  display: flex;
-  justify-content: space-between;
-  margin-left: 70px;
-  margin-right: 70px;
-}
-
-.footer_divs {
-  color: white;
-  display: flex;
-  margin-top: 20px;
-  flex-direction: column;
-}
-
-.footer_div_title {
-  font-family: "Intro Rust", sans-serif;
-  color: var(--bluish-color);
-  font-size: 2.5em;
-  text-transform: uppercase;
-}
-
-.each_contact {
-  display: flex;
-  height: 70px;
-  width: 250px;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.footer_icon {
-  height: 2.5em;
-}
-
-.contact_text,
-.footer_text {
-  font-family: "Knockout Cruiserweight", sans-serif;
-  font-weight: lighter;
-}
-
-.footer_divs > .footer_text {
-  margin-bottom: 10px;
-  display: flex;
-  align-items: center;
-  font-size: 1.5em;
-  height: 40px;
-}
-
-.bottom_footer {
-  margin: 30px 32px auto 40px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 1402px;
-  height: 100px;
-  position: relative;
-}
-.bottom_logo {
-  position: relative;
-  height: 110px;
-  width: 270px;
-  object-fit: cover;
-}
-
-.each_bottom_footer_logo {
-  height: 50px;
-}
-
-#footer_tagline {
-  position: relative;
-  color: white;
-  font-family: "Intro Rust", sans-serif;
-  font-size: 0.8em;
-  word-spacing: 7px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  text-align: center;
-  margin-top: 120px;
-}
-
+/* Services  */
 .services_block {
   /* border: 2px red solid; */
   width: 1362px;
@@ -468,11 +274,213 @@ form {
 }
 
 .service_body .service_title {
-  font-family: "Intro Rust", sans-serif;
+  font-family: var(--primary-font), sans-serif;
   font-size: 2em;
   color: white;
 }
 
 .service_body .service_description {
   font-family: "inter", sans-serif;
+}
+
+/* Partners */
+
+.partners {
+  width: 1362px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 40px;
+  column-gap: 160px;
+}
+.partners {
+  height: 290px;
+}
+
+.client_logo,
+.partners_logo {
+  height: 100px;
+}
+/* Let's Talk  */
+.lets_talk {
+  display: block;
+  position: relative;
+  user-select: none;
+}
+.footer_img {
+  width: 100vw;
+  height: 1490px;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+}
+
+.footer_title {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  top: 0;
+}
+
+.footer_top {
+  position: absolute;
+  top: 250px;
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  z-index: 11111;
+}
+
+.lets_talk_img {
+  margin-left: -175px;
+  height: 500px;
+}
+
+form {
+  position: relative;
+  width: 600px;
+  height: 300px;
+  margin-right: 82px;
+  margin-top: 100px;
+}
+
+.each_from_section > label {
+  color: white;
+  font-family: var(--secondary-font), sans-serif;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: lighter;
+}
+
+.each_from_section {
+  margin-top: 8px;
+}
+
+.input_wrapper,
+.scope {
+  margin-top: 8px;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 100%;
+  height: 30px;
+}
+
+.input_field {
+  color: rgb(255, 255, 255);
+  opacity: 100%;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  background: none;
+  border: none;
+  outline: none;
+}
+
+.scope {
+  padding: 10px;
+  border: none;
+  color: rgb(255, 255, 255);
+  height: 80px;
+  resize: none;
+  outline: none;
+}
+
+#submit_btn {
+  font-family: var(--secondary-font), sans-serif;
+  font-weight: lighter;
+  text-transform: uppercase;
+  height: 30px;
+  width: 100px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--bluish-color);
+  position: absolute;
+  right: 0px;
+  bottom: 0;
+}
+
+.footer {
+  position: relative;
+  margin-top: 800px;
+  height: 300px;
+  width: 1362px;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+.footer_divs {
+  color: white;
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+}
+
+.footer_div_title {
+  font-family: var(--primary-font), sans-serif;
+  color: var(--bluish-color);
+  font-size: 2.5em;
+  text-transform: uppercase;
+}
+
+.each_contact {
+  display: flex;
+  height: 70px;
+  width: 250px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.footer_icon {
+  height: 2.5em;
+}
+
+.contact_text,
+.footer_text {
+  font-family: var(--secondary-font), sans-serif;
+  font-weight: lighter;
+}
+
+.footer_divs > .footer_text {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  font-size: 1.5em;
+  height: 40px;
+}
+
+.bottom_footer {
+  margin: 90px 32px auto 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1402px;
+  height: 100px;
+  position: relative;
+}
+.bottom_logo {
+  position: relative;
+  height: 110px;
+  width: 270px;
+  object-fit: cover;
+}
+
+.each_bottom_footer_logo {
+  height: 50px;
+}
+
+#footer_tagline {
+  position: relative;
+  color: white;
+  font-family: var(--primary-font), sans-serif;
+  font-size: 0.8em;
+  word-spacing: 7px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 170px;
 }
