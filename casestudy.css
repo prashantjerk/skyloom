@@ -1,3 +1,10 @@
+.company .header {
+  text-transform: uppercase;
+  font-family: var(--primary-font), sans-serif;
+  color: var(--bluish-color);
+  font-size: 60px;
+}
+
 .footer {
   margin-top: 130px;
 }
@@ -17,6 +24,38 @@
   margin-right: auto;
 }
 
+.casestudy .card_wrapper {
+  height: 600px;
+}
+.card_block {
+  margin-top: 70px;
+  position: relative;
+}
+
+.card_wrapper .phone_wrapper {
+  position: absolute;
+  top: 0;
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.card_image {
+  height: 400px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.center_card_image {
+  height: 600px;
+}
+.card_block .yellow_spot {
+  width: 600px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  margin-left: 350px;
+}
 /* Stat  */
 .stats {
   color: white;
@@ -29,7 +68,7 @@
   width: 500px;
 }
 .each_stat {
-  width: 300px;
+  width: 220px;
 }
 
 .each_stat .percentage {
@@ -37,7 +76,9 @@
   color: var(--bluish-color);
   font-size: 2em;
 }
-
+.whole_description_block_wrapper {
+  margin-top: 70px;
+}
 .stat_description {
   margin-top: 10px;
   line-height: 20px;
