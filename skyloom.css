@@ -415,7 +415,7 @@ form #submit_btn {
 }
 
 .bottom_footer {
-  margin: 5.625rem 2rem auto 2.5rem;
+  margin: 140px 2rem auto 2.5rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -443,7 +443,7 @@ form #submit_btn {
   letter-spacing: 0.125rem;
   text-transform: uppercase;
   text-align: center;
-  margin-top: 10.625rem;
+  margin-top: 120px;
 }
 @media (max-width: 1400px) {
   .clients .clientlist {
@@ -506,7 +506,6 @@ form #submit_btn {
 }
 
 @media (max-width: 1100px) {
-
   .clients .clientlist {
     width: 641px;
     column-gap: 4px;
@@ -782,4 +781,7 @@ form #submit_btn {
   .landing_page .our_work {
     margin-top: 238px;
   }
+}
+#partner_line {
+  width: 790px;
 }
