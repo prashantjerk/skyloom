@@ -11,7 +11,7 @@
 
 #swiper {
   margin-top: 100px;
-margin-bottom: 0px;
+  margin-bottom: 0px;
   position: relative;
   height: 31.25rem;
 }
@@ -50,14 +50,10 @@ margin-bottom: 0px;
     margin-right: 90px;
   }
 
-  .swiper-slide-prev {
-  }
   .swiper-slide:last-child {
     opacity: 0;
   }
 }
-
-
 
 .swiper-slide .swiper-slide-img img {
   height: 34.125rem;
@@ -91,6 +87,6 @@ margin-bottom: 0px;
   opacity: 0.25;
 }
 
-.clients{
+.clients {
   margin-top: 70px;
 }

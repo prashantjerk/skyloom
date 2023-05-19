@@ -124,7 +124,7 @@ body {
 
 .our_work .our_work_title {
   margin-left: 4.375rem;
-  width: 12.5rem;
+  width: 200px;
   user-select: none;
 }
 
@@ -144,7 +144,6 @@ body {
 
 /* Clients */
 .landing_page .clients {
-  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: start;
@@ -162,7 +161,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 85.125rem;
+  width: 1362px;
   margin-left: 70px;
 }
 
@@ -180,15 +179,16 @@ body {
   width: 900px;
 }
 
+.main_section_block_width {
+  width: 1380px;
+}
 .clients .clientlist {
-  width: 1362px;
   margin-top: 40px;
-  margin-left: 70px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
   row-gap: 15px;
-  column-gap: 100px;
+  column-gap: 80px;
 }
 
 .clients,
@@ -198,10 +198,12 @@ body {
 }
 
 /* Services  */
+.div_center {
+  display: flex;
+  justify-content: center;
+}
 .services .services_block {
-  width: 1332px;
   margin-top: 12.5rem;
-  margin-left: 5rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
@@ -249,7 +251,6 @@ body {
 
 /* Partners */
 .landing_page .partners {
-  width: 1332px;
   margin: 0 70p;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -372,7 +373,6 @@ form #submit_btn {
   width: 1332px;
   display: flex;
   justify-content: space-between;
-  margin-left: 70px;
 }
 
 .footer .footer_divs {
@@ -448,9 +448,7 @@ form #submit_btn {
 }
 @media (max-width: 1400px) {
   .clients .clientlist {
-    width: 725px;
     column-gap: 64px;
-    margin-left: 80px;
   }
 
   .services .services_block {
@@ -516,7 +514,6 @@ form #submit_btn {
   .services .services_block {
     width: 798px;
     column-gap: 16px;
-    margin-left: 106px;
   }
   .each_service .service_icon {
     left: -2px;
@@ -549,7 +546,6 @@ form #submit_btn {
   }
   .landing_page .partners {
     width: 786px;
-    margin-left: 97px;
     column-gap: 63px;
     margin-top: 12px;
   }
@@ -576,7 +572,6 @@ form #submit_btn {
     margin-top: 609px;
     height: 349px;
     width: 792px;
-    margin-left: 120px;
   }
   .footer_divs .footer_div_title {
     font-size: 30px;
@@ -649,7 +644,7 @@ form #submit_btn {
   .partnerships .title_row,
   .lets_talk .title_row {
     font-size: 35px;
-    width: 642px;
+    width: 1232px;
     margin-left: 70px;
     margin-right: 70px;
     margin-top: -40px;
@@ -667,8 +662,7 @@ form #submit_btn {
   }
 
   .clients .clientlist {
-    width: 41.125rem;
-    margin-left: 80px;
+    width: 658px;
     row-gap: 0.9375rem;
     column-gap: 0.125rem;
   }
@@ -679,7 +673,6 @@ form #submit_btn {
 
   .services .services_block {
     width: 720px;
-    margin-left: 2rem;
     row-gap: 3.125rem;
     column-gap: 1.5rem;
   }
@@ -711,7 +704,6 @@ form #submit_btn {
   }
   .landing_page .partners {
     width: 360px;
-    margin-left: 57px;
     margin-top: 10px;
     column-gap: 68px;
   }
@@ -743,7 +735,6 @@ form #submit_btn {
     margin-top: 609px;
     height: 349px;
     width: 674px;
-    margin-left: 42px;
   }
   .footer_divs .footer_div_title {
     font-size: 30px;
