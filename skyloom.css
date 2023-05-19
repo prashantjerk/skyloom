@@ -767,6 +767,9 @@ form #submit_btn {
   .bottom_footer_logo .each_bottom_footer_logo {
     height: 32px;
   }
+  #footer_tagline {
+    margin-top: 200px;
+  }
   .mouse-icon {
     height: 37px;
     right: 34px;
@@ -781,6 +784,9 @@ form #submit_btn {
   }
   #partner_line {
     width: 700px;
+  }
+  .landing_page .our_work {
+    margin-top: 50px;
   }
 }
 #partner_line {
