@@ -161,8 +161,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 1362px;
-  margin-left: 70px;
 }
 
 .clients .line,
@@ -179,16 +177,13 @@ body {
   width: 900px;
 }
 
-.main_section_block_width {
-  width: 1380px;
-}
 .clients .clientlist {
   margin-top: 40px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
   row-gap: 15px;
-  column-gap: 80px;
+  column-gap: 135px;
 }
 
 .clients,
@@ -251,12 +246,11 @@ body {
 
 /* Partners */
 .landing_page .partners {
-  margin: 0 70p;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
   row-gap: 2.5rem;
-  column-gap: 10rem;
+  column-gap: 240px;
   height: 18.125rem;
 }
 
@@ -617,7 +611,6 @@ form #submit_btn {
   .partnerships .title_row,
   .lets_talk .title_row {
     font-size: 40px;
-    width: 900px;
   }
 }
 
@@ -645,8 +638,6 @@ form #submit_btn {
   .lets_talk .title_row {
     font-size: 35px;
     width: 1232px;
-    margin-left: 70px;
-    margin-right: 70px;
     margin-top: -40px;
   }
   .clients .line,
@@ -789,4 +780,20 @@ form #submit_btn {
 }
 #service_line {
   width: 980px;
+}
+
+.main_section_block_width {
+  width: 1380px;
+}
+.all_title_width {
+  width: 1380px;
+}
+
+.all_title_width_wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.our_work_title{
+  margin-left: 70px;
 }
