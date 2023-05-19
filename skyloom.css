@@ -72,7 +72,6 @@ body {
 }
 
 .landing_page .hero {
-  /* width: calc(100vw-5rem); */
   width: 100vw;
 }
 
@@ -164,29 +163,32 @@ body {
   align-items: center;
   justify-content: space-between;
   width: 85.125rem;
-  margin-left: 4.375rem;
-  margin-right: 6.875rem;
+  margin-left: 70px;
 }
 
 .clients .line,
 .services .line,
 .partnerships .line,
 .footer_title .line {
-  width: 59.375rem;
+  width: 950px;
   height: 0.5rem;
   border-radius: 0.125rem;
   background-color: var(--bluish-color);
 }
 
+#service_line {
+  width: 900px;
+}
+
 .clients .clientlist {
-  width: 85.125rem;
-  margin-top: 2.5rem;
-  margin-left: 4.375rem;
+  width: 1362px;
+  margin-top: 40px;
+  margin-left: 70px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(5, 1fr);
-  row-gap: 0.9375rem;
-  column-gap: 8.125rem;
+  row-gap: 15px;
+  column-gap: 100px;
 }
 
 .clients,
@@ -197,14 +199,14 @@ body {
 
 /* Services  */
 .services .services_block {
-  width: 85.125rem;
+  width: 1332px;
   margin-top: 12.5rem;
   margin-left: 5rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  row-gap: 3.125rem;
-  column-gap: 7.5rem;
+  row-gap: 50px;
+  column-gap: 120px;
   color: white;
 }
 
@@ -247,8 +249,8 @@ body {
 
 /* Partners */
 .landing_page .partners {
-  width: 85.125rem;
-  margin: 0 auto;
+  width: 1332px;
+  margin: 0 70p;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -367,11 +369,10 @@ form #submit_btn {
   position: relative;
   margin-top: 50rem;
   height: 18.75rem;
-  width: 85.125rem;
+  width: 1332px;
   display: flex;
   justify-content: space-between;
   margin-left: 70px;
-  margin-right: 70px;
 }
 
 .footer .footer_divs {
@@ -791,4 +792,10 @@ form #submit_btn {
 }
 #partner_line {
   width: 790px;
+}
+#clients_line {
+  width: 990px;
+}
+#service_line {
+  width: 980px;
 }
