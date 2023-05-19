@@ -445,10 +445,49 @@ form #submit_btn {
   text-align: center;
   margin-top: 10.625rem;
 }
-@media (max-width: 1370px) {
-  .hero {
-    /* border: 1px red solid; */
+@media (max-width: 1400px) {
+  .clients .clientlist {
+    width: 725px;
+    column-gap: 64px;
+    margin-left: 80px;
   }
+
+  .services .services_block {
+    width: 884px;
+    column-gap: 16px;
+    margin-top: 106px;
+  }
+  .each_service .service_icon {
+    left: -2px;
+    top: -160px;
+    height: 301px;
+  }
+  .each_service .service_body {
+    position: absolute;
+    top: 119px;
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+  .services_block .each_service {
+    height: 444px;
+  }
+  .service_body .service_title {
+    font-size: 20px;
+  }
+  .service_body .service_description {
+    font-size: 16px;
+    margin-top: 10px;
+  }
+
+  .clients .line,
+  .services .line,
+  .partnerships .line,
+  .footer_title .line {
+    width: 589px;
+    height: 5px;
+  }
+}
+@media (max-width: 1300px) {
   .hero .tagline {
     width: 38.125rem;
   }
@@ -464,28 +503,20 @@ form #submit_btn {
   .hanging_image_section .hanging_img {
     height: 49.375rem;
   }
-  .clients .title_row,
-  .services .title_row,
-  .partnerships .title_row,
-  .lets_talk .title_row {
-    font-size: 50px;
-    width: 1220px;
-  }
 }
 
 @media (max-width: 1100px) {
-  body {
-    /* border: 1px red solid; */
-  }
+
   .clients .clientlist {
-    width: 700px;
-    column-gap: 18px;
+    width: 641px;
+    column-gap: 4px;
+    margin-left: 102px;
   }
 
   .services .services_block {
-    width: 884px;
+    width: 798px;
     column-gap: 16px;
-    margin-top: 106px;
+    margin-left: 106px;
   }
   .each_service .service_icon {
     left: -2px;
@@ -595,7 +626,7 @@ form #submit_btn {
   }
 }
 
-@media (max-width: 988px) {
+@media (max-width: 900px) {
   body {
     /* border: 1px red solid; */
   }
@@ -639,7 +670,7 @@ form #submit_btn {
 
   .clients .clientlist {
     width: 41.125rem;
-    margin-left: 3.375rem;
+    margin-left: 80px;
     row-gap: 0.9375rem;
     column-gap: 0.125rem;
   }
