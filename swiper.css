@@ -1,0 +1,118 @@
+/* Swiper  */
+
+.yellow-img {
+  position: absolute;
+  left: 44.5rem;
+  top: -4.0625rem;
+  height: 34.375rem;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+#swiper {
+  margin-top: 6.25rem;
+  position: relative;
+  height: 31.25rem;
+}
+#swiper .swiper-slider {
+  border: 4px green solid;
+  height: 41.25rem;
+  width: 100%;
+  position: absolute;
+  top: 0%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.swiper-slide {
+  width: 31.25rem !important;
+  height: 42rem !important;
+}
+@media (max-width: 1465px) {
+  #swiper .swiper-slider {
+    padding: 430px;
+    border: 4px red solid;
+  }
+  .swiper-slide {
+    opacity: 0.5;
+  }
+
+  .swiper-slide-active {
+    border: 4px red solid;
+    width: 20.25rem !important;
+    height: 42rem !important;
+    margin-left: 90px;
+    margin-right: 40px;
+  }
+
+  .swiper-slide-next,
+  .swiper-slide-prev {
+    opacity: 0.5;
+    width: 31.25rem !important;
+    height: 42rem !important;
+    width: 15rem !important;
+  }
+  .swiper-slide-next {
+    border: 4px blue solid;
+    margin-right: 90px;
+  }
+
+  .swiper-slide-prev {
+    border: 2px green solid;
+    margin-right: 0px;
+  }
+  .swiper-slide:last-child {
+    opacity: 0;
+  }
+}
+
+/* @media (max-width: 31.25rem) {
+      #swiper .swiper-slider {
+        height: 45rem;
+      }
+    } */
+
+/* @media (max-width: 31.25rem) {
+    .swiper-slide {
+      width: 28rem !important;
+      height: 36rem !important;
+    }
+    .swiper-slide .swiper-slide-img img {
+      width: 31.25rem !important;
+      height: 36rem !important;
+      aspect-ratio: 2/3 !important;
+      object-fit: cover !important;
+    }
+  } */
+
+.swiper-slide .swiper-slide-img img {
+  height: 33.125rem;
+  object-fit: cover;
+  border-radius: 2rem;
+}
+
+.swiper-slide-shadow-left,
+.swiper-slide-shadow-right {
+  display: none;
+}
+
+.swiper-slide {
+  opacity: 0.5;
+}
+
+.swiper-slide-active {
+  opacity: 1;
+}
+
+.swiper-slide-next,
+.swiper-slide-prev {
+  opacity: 0.5;
+}
+
+.swiper-slide:last-child {
+  opacity: 0;
+}
+
+.swiper-slide-prev.swiper-slide-active ~ .swiper-slide {
+  opacity: 0.25;
+}
+
