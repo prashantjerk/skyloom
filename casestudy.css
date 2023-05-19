@@ -2,7 +2,7 @@
   text-transform: uppercase;
   font-family: var(--primary-font), sans-serif;
   color: var(--bluish-color);
-  font-size: 60px;
+  font-size: 3.75rem;
 }
 
 .footer {
@@ -74,7 +74,7 @@
 .each_stat .percentage {
   font-family: var(--primary-font), sans-serif;
   color: var(--bluish-color);
-  font-size: 2em;
+  font-size: 2rem;
 }
 .whole_description_block_wrapper {
   margin-top: 70px;
@@ -94,7 +94,7 @@
 .section_title {
   font-family: var(--primary-font), sans-serif;
   color: var(--bluish-color);
-  font-size: 2em;
+  font-size: 2rem;
 }
 
 .section_description {
