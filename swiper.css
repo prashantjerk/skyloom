@@ -40,8 +40,8 @@
 ::-webkit-scrollbar-track {
   background: #f9f9f9;
 }
-.our_work{
-    position: relative;
+.our_work {
+  position: relative;
 }
 
 .container {
@@ -75,14 +75,14 @@
   object-fit: cover;
 }
 
-.swiper-wrapper{
-    width: 100%;
+.swiper-wrapper {
+  width: 100%;
 }
 
-.swiper-slide-img{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.swiper-slide-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 #swiper .swiper-slider {
   height: 52rem;
@@ -114,7 +114,7 @@
 }
 
 .swiper-slide .swiper-slide-img img {
-  width: 592px ;
+  width: 592px;
   height: 672px;
   border-radius: 32px;
   object-fit: cover;
@@ -199,11 +199,12 @@
   bottom: 1rem;
 }
 
-
 .swiper-slider-control .swiper-pagination .swiper-pagination-bullet-active {
   background: var(--primary);
 }
 
-.swiper-pagination-bullet{
-    background: #fff !important;
+.swiper-pagination-bullet {
+  background: #fff !important;
 }
+
+
