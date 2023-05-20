@@ -12,11 +12,6 @@
   --primary: #ec994b;
 }
 
-/* .whole_swipper_section {
-  font-size: 62.5%;
-  scroll-behavior: smooth;
-} */
-
 @media (min-width: 2560px) {
   html {
     zoom: 1.5;
@@ -72,7 +67,6 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  /* align-items: center; */
 }
 
 .yellow_image {
