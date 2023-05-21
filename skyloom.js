@@ -14,8 +14,4 @@ var swiperSlider = new Swiper(".swiper-slider", {
     el: ".swiper-pagination",
     clickable: true,
   },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
 });
