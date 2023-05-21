@@ -1,0 +1,68 @@
+:root {
+  /* color */
+  --background-color: #0c0d16;
+  --bluish-color: #11f8c8;
+
+  /* font  */
+  --primary-font: "Intro Rust";
+  --secondary-font: "Knockout Cruiserweight";
+}
+.flex {
+  display: flex;
+}
+
+.flex-c {
+  flex-direction: column;
+}
+
+.grid {
+  display: grid;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+.jc-sb {
+  justify-content: space-between;
+}
+
+.jc-start {
+  justify-content: start;
+}
+
+.ai-center {
+  align-items: center;
+}
+
+.width-100 {
+  width: 100%;
+}
+
+.all_title_width_wrapper {
+  width: 1450px;
+}
+
+.bluish {
+  color: var(--bluish-color);
+}
+
+.size {
+  font-size: 60px;
+}
+
+.rust-font {
+  font-family: var(--primary-font), sans-serif;
+}
+
+.border {
+  border: 12px red solid;
+}
+
+.mb40 {
+  margin-bottom: 40px;
+}
+
+.mt40 {
+  margin-top: 40px;
+}
