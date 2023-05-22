@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="favicon.png" type="image/png" />
+    <link rel="icon" type="image/png" href="favicon.png">
     <link rel="stylesheet" href="skyloom.css" />
     <link rel="stylesheet" href="swiper.css" />
     <link rel="stylesheet" href="utils.css" />
@@ -18,6 +18,7 @@
     />
     <link href="gdpr-cookie.css" rel="stylesheet" />
     <script
+      defer
       src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT"
       crossorigin="anonymous"
@@ -30,9 +31,11 @@
     <section class="first_page width-100">
       <img src="First page/first-page.png" alt="image" class="header_img" />
       <div class="nav-wrapper width-100 flex jc-center">
-        <nav class="navbar flex all_title_width_wrapper jc-sb ai-center">
-          <img src="First page/logo.png" alt="Logo" class="logo" />
-          <span class="material-symbols-outlined menu"> menu </span>
+        <nav class="navbar home_nav_bar_width flex jc-sb ai-center">
+          <a href="index.html">
+            <img src="First page/logo.png" alt="Logo" class="logo" />
+          </a>
+          <span class="material-symbols-outlined menu home_menu"> menu </span>
         </nav>
       </div>
 
@@ -75,14 +78,18 @@
         </div>
       </div>
 
-      <div class="whole_swipper_section">
-        <div class="yellow_wrapper">
-          <img src="Our Work/8.png" class="yellow_image" alt="" />
+      <div class="whole_swipper_section width-100 swiper-section-height">
+        <div
+          class="yellow-container flex jc-center ai-center swiper-section-height"
+        >
+          <div class="yellow-img-wrapper">
+            <img src="Our Work/8.png" class="yellow_image" alt="" />
+          </div>
         </div>
-        <section id="swiper">
-          <div class="container">
-            <div class="swiper swiper-slider">
-              <div class="swiper-wrapper">
+        <div id="swiper" class="swiper-section-height">
+          <div class="container swiper-section-height">
+            <div class="swiper swiper-slider swiper-section-height">
+              <div class="swiper-wrapper swiper-section-height flex ai-center">
                 <!-- Slide-start -->
                 <div class="swiper-slide swiper-slide">
                   <a href="blinkist.html">
@@ -95,7 +102,7 @@
 
                 <!-- Slide-start -->
                 <div class="swiper-slide swiper-slide">
-                  <a href="blinkist.html">
+                  <a href="9five.html">
                     <div class="swiper-slide-img">
                       <img src="Our Work/5.png" alt="swiper" />
                     </div>
@@ -105,7 +112,7 @@
 
                 <!-- Slide-start -->
                 <div class="swiper-slide swiper-slide">
-                  <a href="9five.html">
+                  <a href="#">
                     <div class="swiper-slide-img">
                       <img src="Our Work/3.png" alt="swiper" />
                     </div>
@@ -138,12 +145,12 @@
           <div class="swiper-slider-control">
             <div class="swiper-pagination"></div>
           </div>
-        </section>
+        </div>
       </div>
     </section>
 
     <!-- Clients  -->
-    <section class="clients width-100">
+    <section class="clients width-100 mt80">
       <div class="width-100 flex jc-center">
         <div
           class="title_row mb40 mt40 all_title_width_wrapper flex jc-sb ai-center"
@@ -194,7 +201,7 @@
           <span class="line" id="service_line"></span>
         </div>
       </div>
-      <div class="service_block_wrapper flex jc-center">
+      <div class="service_block_wrapper width-100 flex jc-center">
         <div class="services_block all_title_width_wrapper grid">
           <div class="each_service">
             <img
@@ -465,7 +472,9 @@
           class="bottom_footer all_title_width_wrapper flex jc-sb ai-center"
         >
           <div class="footer-logo-wrapper">
-            <img src="First page/logo.png" alt="Logo" class="bottom_logo" />
+            <a href="index.html">
+              <img src="First page/logo.png" alt="Logo" class="bottom_logo" />
+            </a>
           </div>
           <div class="bottom_footer_logo flex">
             <img
@@ -495,25 +504,27 @@
     </section>
 
     <script
+      defer
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
     ></script>
     <script
+      defer
       nomodule
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
     ></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script src="skyloom.js"></script>
+    <script defer src="skyloom.js"></script>
 
     <!-- LIVE CHAT  EMBED-->
-    <script>
+    <script defer>
       window.intercomSettings = {
         api_base: "https://api-iam.intercom.io",
         app_id: "kw1k57a3",
       };
     </script>
 
-    <script>
+    <script defer>
       // We pre-filled your app ID in the widget URL: 'https://widget.intercom.io/widget/kw1k57a3'
       (function () {
         var w = window;
@@ -550,8 +561,8 @@
       })();
     </script>
 
-    <script src="gdpr-cookie.js"></script>
-    <script>
+    <script defer src="gdpr-cookie.js"></script>
+    <script defer>
       $.gdprcookie.init({
         title: "🍪 Accept cookies & privacy policy?",
         message:
@@ -577,7 +588,7 @@
         console.log("This should run because marketing is accepted.");
       }
     </script>
-    <script>
+    <script defer>
       $.gdprcookie.init({
         title: "Cookies & privacy",
         subtitle: "Select cookies to accept",
@@ -594,7 +605,7 @@
         customShowChecks: undefined,
       });
     </script>
-    <script>
+    <script defer>
       $(document.body)
         .on("gdpr:show", function () {
           console.log("Cookie dialog is shown");

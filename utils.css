@@ -7,6 +7,11 @@
   --primary-font: "Intro Rust";
   --secondary-font: "Knockout Cruiserweight";
 }
+
+html {
+  transition: 1s ease-in;
+}
+
 .flex {
   display: flex;
 }
@@ -40,6 +45,14 @@
 }
 
 .all_title_width_wrapper {
+  width: 1380px;
+}
+
+.nav_bar_width{
+  width: 1400px;
+}
+
+.home_nav_bar_width{
   width: 1450px;
 }
 
@@ -65,4 +78,7 @@
 
 .mt40 {
   margin-top: 40px;
+}
+.mt80 {
+  margin-top: 80px;
 }

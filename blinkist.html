@@ -4,10 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blinkest</title>
+    <link rel="icon" type="image/png" href="favicon.png" />
+    <title>Blinkist</title>
     <link rel="stylesheet" href="skyloom.css" />
     <link rel="stylesheet" href="casestudy.css" />
-    <link rel="stylesheet" href="blinkest.css" />
+    <link rel="stylesheet" href="utils.css" />
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
@@ -16,206 +17,257 @@
   <body class="casestudy blinkist">
     <section class="first_page">
       <img src="Blinkist/Blinkist.png" alt="image" class="header_img" />
-      <nav class="navbar">
-        <img src="First page/logo.png" alt="Logo" class="logo" />
-        <span class="material-symbols-outlined menu"> menu </span>
-      </nav>
+      <div class="navbar-wrapper width-100 flex jc-center">
+        <nav class="navbar nav_bar_width flex jc-sb ai-center">
+          <div class="logo-wrapper">
+            <a href="index.html">
+              <img src="First page/logo.png" alt="Logo" class="logo" />
+            </a>
+          </div>
+          <span class="material-symbols-outlined menu"> menu </span>
+        </nav>
+      </div>
     </section>
 
-    <div class="company width_util">
-      <header class="header">Blinkist</header>
-      <p class="para company_para section_description">
-        Blinkist is a Berlin-based app with over 12 million users, for those who
-        enjoy reading but don’t have the time. It allows users to absorb the
-        main ideas from non-fiction books in 15-minute bitesize audio and text
-        samples and has a catalog of over 3000 titles.
-      </p>
+    <div class="company width-100 flex jc-center mt40">
+      <div class="bio-wrap all_title_width_wrapper flex flex-c">
+        <header class="header">Blinkist</header>
+        <p class="para company_para section_description">
+          Blinkist is a Berlin-based app with over 12 million users, for those
+          who enjoy reading but don’t have the time. It allows users to absorb
+          the main ideas from non-fiction books in 15-minute bitesize audio and
+          text samples and has a catalog of over 3000 titles.
+        </p>
+      </div>
     </div>
 
-    <div class="card_wrapper width_util">
-      <div class="card_block">
-        <img src="Our Work/8.png" class="yellow_spot" alt="Image" />
-        <div class="phone_wrapper width_util">
-          <div class="phone">
-            <img src="Blinkist/8.png" class="card_image" alt="Image" />
+    <div class="card_wrapper width-100 flex jc-center mt80">
+      <div class="card_block all_title_width_wrapper">
+        <div class="yellow-container width-100 flex jc-center">
+          <div class="yellow-wrapper all_title_width_wrapper flex jc-center">
+            <img src="Our Work/8.png" class="yellow_spot" alt="Image" />
           </div>
-          <div class="phone">
-            <img
-              src="Blinkist/7.png"
-              class="card_image center_card_image"
-              alt="Image"
-            />
-          </div>
-          <div class="phone">
-            <img src="Blinkist/9.png" class="card_image" alt="Image" />
+        </div>
+        <div class="phone-wrapper width-100 flex jc-center">
+          <div class="phone_wrapper all_title_width_wrapper flex ai-center">
+            <div class="phone">
+              <img
+                src="Blinkist/8.png"
+                class="card_image adjacent-img"
+                alt="Image"
+              />
+            </div>
+            <div class="phone">
+              <img
+                src="Blinkist/7.png"
+                class="card_image center_card_image"
+                alt="Image"
+              />
+            </div>
+            <div class="phone">
+              <img
+                src="Blinkist/9.png"
+                class="card_image adjacent-img"
+                alt="Image"
+              />
+            </div>
           </div>
         </div>
       </div>
     </div>
 
-    <section class="whole_description_block_wrapper width_util">
+    <section class="whole_description_block_wrapper width-100">
       <!-- Stats  -->
-      <section class="stats">
-        <div class="each_stat">
-          <p class="percentage">3220%</p>
-          <p class="stat_description">
-            uplift in the number of times the recommended book was added to
-            users’ libraries
-          </p>
-        </div>
-        <div class="each_stat">
-          <p class="percentage">3220%</p>
-          <p class="stat_description">
-            uplift in the number of users who began reading the book
-          </p>
-        </div>
-        <div class="each_stat">
-          <p class="percentage">3220%</p>
-          <p class="stat_description">uplift in the overall book add rate</p>
-        </div>
-        <div class="each_stat">
-          <p class="percentage">3220%</p>
-          <p class="stat_description">uplift in the overall start rate</p>
+
+      <section class="stats-wrapper width-100 flex jc-center">
+        <div class="stats all_title_width_wrapper flex jc-sb">
+          <div class="each_stat">
+            <p class="percentage">3220%</p>
+            <p class="stat_description">
+              uplift in the number of times the recommended book was added to
+              users’ libraries
+            </p>
+          </div>
+          <div class="each_stat">
+            <p class="percentage">4367%</p>
+            <p class="stat_description">
+              uplift in the number of users who began reading the book
+            </p>
+          </div>
+          <div class="each_stat">
+            <p class="percentage">6.62%</p>
+            <p class="stat_description">uplift in the overall book add rate</p>
+          </div>
+          <div class="each_stat">
+            <p class="percentage">6.55%</p>
+            <p class="stat_description">uplift in the overall start rate</p>
+          </div>
         </div>
       </section>
 
       <!-- The Challenges  -->
-      <section class="main_description">
-        <div class="challenge each_main_description_block">
-          <p class="section_title">The Challenge</p>
-          <p class="section_description">
-            How to keep users consistently engaged with their content. The team
-            at Blinkist was concerned that without guidance, users would feel
-            overwhelmed and not know which book to start next.
-          </p>
-        </div>
-        <div class="solution each_main_description_block">
-          <p class="section_title">The Solution</p>
-          <p class="section_description">
-            Blinkist approached the Retention team at Skyloom to leverage their
-            expertise in in-app messaging. They hypothesized that by displaying
-            a book release in-app notification on session start, users would be
-            encouraged to explore the featured title and overall engagement
-            would thereby also be increased. Working hand-in-hand with the
-            design team at Blinkist, a new In-App Message template was created
-            to promote the latest content release. The design and copy were
-            refined together, and the template was given the right capabilities
-            to fit every situation and device. Over a period of two weeks, all
-            premium, English-speaking users were sent the message at the start
-            of their session. Very little user segmentation was required as the
-            purpose was simply to show how impactful In-App Messages have the
-            potential to be.
-          </p>
-        </div>
-        <div class="result each_main_description_block">
-          <p class="section_title">The Results</p>
-          <div class="section_description">
-            <p class="para">
-              The In-App Message had an impressive 90% CTR and as an immediate
-              result of the Retention team’s work, Blinkist saw a 3220% uplift
-              in instances of the recommended book being added to users’
-              libraries and a 4367% uplift in the number of users who began
-              reading the book. This In-App Message also prompted users to
-              consume more content in general. There was a 6.62% uplift in the
-              overall book add rate and a 6.55% uplift in the overall start
-              rate.
+      <section class="main_description width-100 flex jc-center mt40">
+        <div
+          class="description-block-wrapper all_title_width_wrapper flex flex-c mt40"
+        >
+          <div class="challenge">
+            <p class="section_title">The Challenge</p>
+            <p class="section_description">
+              How to keep users consistently engaged with their content. The
+              team at Blinkist was concerned that without guidance, users would
+              feel overwhelmed and not know which book to start next.
             </p>
-            <p class="para">
-              Blinkist continued to use the In-App Message template provided by
-              Skyloom to create new In-App Messages, promoting new content and
-              features to their Premium user base. They observed a similar
-              impact - which is a further testament to the efficiency of In-App
-              Messaging as a channel.
+          </div>
+          <div class="solution each_main_description_block">
+            <p class="section_title">The Solution</p>
+            <p class="section_description">
+              Blinkist approached the Retention team at Skyloom to leverage
+              their expertise in in-app messaging. They hypothesized that by
+              displaying a book release in-app notification on session start,
+              users would be encouraged to explore the featured title and
+              overall engagement would thereby also be increased. Working
+              hand-in-hand with the design team at Blinkist, a new In-App
+              Message template was created to promote the latest content
+              release. The design and copy were refined together, and the
+              template was given the right capabilities to fit every situation
+              and device. Over a period of two weeks, all premium,
+              English-speaking users were sent the message at the start of their
+              session. Very little user segmentation was required as the purpose
+              was simply to show how impactful In-App Messages have the
+              potential to be.
             </p>
-            <p class="para">
-              The project was co-delivered in tandem with the retention team at
-              Phiture.
-            </p>
+          </div>
+          <div class="result each_main_description_block">
+            <p class="section_title">The Results</p>
+            <div class="section_description">
+              <p class="para">
+                The In-App Message had an impressive 90% CTR and as an immediate
+                result of the Retention team’s work, Blinkist saw a 3220% uplift
+                in instances of the recommended book being added to users’
+                libraries and a 4367% uplift in the number of users who began
+                reading the book. This In-App Message also prompted users to
+                consume more content in general. There was a 6.62% uplift in the
+                overall book add rate and a 6.55% uplift in the overall start
+                rate.
+              </p>
+              <p class="para">
+                Blinkist continued to use the In-App Message template provided
+                by Skyloom to create new In-App Messages, promoting new content
+                and features to their Premium user base. They observed a similar
+                impact - which is a further testament to the efficiency of
+                In-App Messaging as a channel.
+              </p>
+              <p class="para">
+                The project was co-delivered in tandem with the retention team
+                at Phiture.
+              </p>
+            </div>
           </div>
         </div>
       </section>
     </section>
 
     <!-- Footer  -->
-    <section class="lets_talk case_study_footer">
-      <img
-        src="Let's Talk and Footer Backkround.png"
-        alt="Image"
-        class="footer_img"
-      />
-      <section class="footer width_util">
-        <div class="footer_divs footer_contact">
-          <p class="footer_div_title">Contact</p>
-          <div class="each_contact">
-            <img
-              src="Call to Action in footer/location.png"
-              class="footer_icon"
-              alt="Location"
-            />
-            <p class="contact_text">Saudia Arab, Riyadh, Exit 7</p>
-          </div>
+    <section class="case_study_footer width-100 mt40">
+      <div class="footer-img-wrapper">
+        <img
+          src="Let's Talk and Footer Backkround.png"
+          alt="Image"
+          class="footer_img"
+        />
+      </div>
+      <section class="footer width-100">
+        <div class="footer_wrapper width-100 flex jc-center">
+          <section class="footer all_title_width_wrapper flex jc-sb">
+            <div class="footer_divs footer_contact flex flex-c">
+              <p class="footer_div_title bluish rust-font bluish rust-font">
+                Contact
+              </p>
+              <div class="each_contact flex ai-center">
+                <img
+                  src="Call to Action in footer/location.png"
+                  class="footer_icon"
+                  alt="Location"
+                />
+                <p class="contact_text">Saudia Arab, Riyadh, Exit 7</p>
+              </div>
 
-          <div class="each_contact">
-            <img
-              src="Call to Action in footer/email.png"
-              class="footer_icon"
-              alt="Email"
-            />
-            <p class="contact_text">hello@qiratven.com</p>
-          </div>
+              <div class="each_contact flex ai-center">
+                <div class="footer-icon-wrapper">
+                  <img
+                    src="Call to Action in footer/email.png"
+                    class="footer_icon"
+                    alt="Email"
+                  />
+                </div>
+                <p class="contact_text">hello@qiratven.com</p>
+              </div>
 
-          <div class="each_contact">
-            <img
-              src="Call to Action in footer/whatsapp.png"
-              class="footer_icon"
-              alt="Whatsapp"
-            />
-            <p class="contact_text">+966594542796</p>
-          </div>
+              <div class="each_contact flex ai-center">
+                <div class="footer-icon-wrapper">
+                  <img
+                    src="Call to Action in footer/whatsapp.png"
+                    class="footer_icon"
+                    alt="Whatsapp"
+                  />
+                </div>
+                <p class="contact_text">+966594542796</p>
+              </div>
+            </div>
+            <div class="footer_divs footer_explore">
+              <p class="footer_div_title bluish rust-font">Explore</p>
+              <p class="footer_text explore_text">Contact</p>
+              <p class="footer_text explore_text">About</p>
+              <p class="footer_text explore_text">Services</p>
+              <p class="footer_text explore_text">Clients</p>
+            </div>
+            <div class="footer_divs footer_services">
+              <p class="footer_div_title bluish rust-font">Services</p>
+              <p class="footer_text servives_text">Paid Media</p>
+              <p class="footer_text servives_text">Growth Hacking</p>
+              <p class="footer_text servives_text">Strategy</p>
+              <p class="footer_text servives_text">Communication</p>
+              <p class="footer_text servives_text">Decision Sciences</p>
+            </div>
+          </section>
         </div>
-        <div class="footer_divs footer_explore">
-          <p class="footer_div_title">Explore</p>
-          <p class="footer_text explore_text">Contact</p>
-          <p class="footer_text explore_text">About</p>
-          <p class="footer_text explore_text">Services</p>
-          <p class="footer_text explore_text">Clients</p>
+        <div class="bottom_footer_wrapper width-100 flex jc-center">
+          <section
+            class="bottom_footer all_title_width_wrapper flex jc-sb ai-center"
+          >
+            <div class="footer-logo-wrapper">
+              <a href="index.html">
+                <img src="First page/logo.png" alt="Logo" class="bottom_logo" />
+              </a>
+            </div>
+            <div class="bottom_footer_logo flex">
+              <img
+                src="Social Icons/facebook.png"
+                class="each_bottom_footer_logo"
+                alt="Facebook"
+              />
+              <img
+                src="Social Icons/tiktok.png"
+                class="each_bottom_footer_logo"
+                alt="tiktok"
+              />
+              <img
+                src="Social Icons/linkedin.png"
+                class="each_bottom_footer_logo"
+                alt="linkedin"
+              />
+              <img
+                src="Social Icons/insta.png"
+                class="each_bottom_footer_logo"
+                alt="insta"
+              />
+            </div>
+          </section>
         </div>
-        <div class="footer_divs footer_services">
-          <p class="footer_div_title">Services</p>
-          <p class="footer_text servives_text">Paid Media</p>
-          <p class="footer_text servives_text">Growth Hacking</p>
-          <p class="footer_text servives_text">Strategy</p>
-          <p class="footer_text servives_text">Communication</p>
-          <p class="footer_text servives_text">Decision Sciences</p>
-        </div>
+        <p class="rust-font width-100" id="case_footer_tagline">
+          A Qirat Ventures Company.
+        </p>
       </section>
-      <section class="bottom_footer">
-        <img src="First page/logo.png" alt="Logo" class="bottom_logo" />
-        <div class="bottom_footer_logo">
-          <img
-            src="Social Icons/facebook.png"
-            class="each_bottom_footer_logo"
-            alt="Facebook"
-          />
-          <img
-            src="Social Icons/tiktok.png"
-            class="each_bottom_footer_logo"
-            alt="tiktok"
-          />
-          <img
-            src="Social Icons/linkedin.png"
-            class="each_bottom_footer_logo"
-            alt="linkedin"
-          />
-          <img
-            src="Social Icons/insta.png"
-            class="each_bottom_footer_logo"
-            alt="insta"
-          />
-        </div>
-      </section>
-
-      <p id="footer_tagline">A Qirat Ventures Company.</p>
     </section>
   </body>
 </html>
