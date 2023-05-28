@@ -7,16 +7,18 @@
     <link rel="icon" href="favicon.png" type="image/png" />
     <link rel="stylesheet" href="skyloom.css" />
     <link rel="stylesheet" href="swiper.css" />
-    <link rel="stylesheet" href="utils.css" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
     />
+    
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
     />
     <link href="gdpr-cookie.css" rel="stylesheet" />
+    <link rel="stylesheet" href="menu.css">
+
     <script
       src="https://code.jquery.com/jquery-3.3.1.min.js"
       integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT"
@@ -27,52 +29,54 @@
   </head>
   <body class="landing_page">
     <!-- First Page  -->
-    <section class="first_page width-100">
+    <section class="first_page">
       <img src="First page/first-page.png" alt="image" class="header_img" />
-      <div class="nav-wrapper width-100 flex jc-center">
-        <nav class="navbar flex all_title_width_wrapper jc-sb ai-center">
-          <img src="First page/logo.png" alt="Logo" class="logo" />
-          <span class="material-symbols-outlined menu"> menu </span>
+      <nav class="navbar all_title_width_wrapper all_title_width">
+        <img src="First page/logo.png" alt="Logo" class="logo" />
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+          <ul class="item">
+            <li><a class="nav-item">ABOUT</a></li>
+            <li><a class="nav-item" href="#clients-section">CLIENT</a></li>
+            <li><a class="nav-item" href="#services-section">SERVICES</a></li>
+            <li><a class="nav-item" href="#casetudy-section">CASES </a></li>
+            <li><a class="nav-item" href="#letstalk-section">LET'S TALK</a></li>
+          </ul>
         </nav>
-      </div>
-
-      <!-- hero  -->
-      <div class="hero width-100">
-        <div class="hero-body-wrapper width-100 flex jc-center">
-          <div class="hero_body all_title_width_wrapper flex jc-sb">
-            <div class="tagline">
-              <p class="tagline_quote rust-font">
-                Skyloom drives growth that reaches above the revenue
-                stratosphere.
-              </p>
-              <p class="second_tagline">
-                We know a thing or two about growth marketing.
-              </p>
-            </div>
-            <div class="hanging-img-wrapper">
-              <img
-                src="First page/first-page-astro.png"
-                alt="image"
-                class="hanging_img"
-              />
-            </div>
-          </div>
-        </div>
-        <div class="mouse-icon-wrapper width-100 flex jc-center">
-          <div class="mouse-icon all_title_width_wrapper flex">
-            <img src="mouse_icon.png" class="mouse-icon-img" alt="mouse-icon" />
-          </div>
-        </div>
-      </div>
     </section>
+    <div class="hero all_title_width all_title_width_wrapper">
+      <div class="hero_body">
+        <div class="tagline">
+          <p class="tagline_quote">
+            Skyloom drives growth<br> that reaches above the <br> revenue stratosphere.
+          </p>
+          <p class="second_tagline">
+            We know a thing or two about growth marketing.
+          </p>
+        </div>
+        <div class="hanging_image_section">
+          <img
+            src="First page/1.png"
+            alt="image"
+            class="hanging_img"
+          />
+        </div>
+      </div>
+    </div>
+<br>
+<br>
+
+<br>
+
+<br>
 
     <!-- Our Work  -->
-    <section class="our_work width-100">
-      <div class="our-work-title-wrapper width-100 flex jc-center">
-        <div class="our_work_title all_title_width_wrapper flex jc-start">
-          <span class="span1 rust-font"> Our </span
-          ><span class="span2 bluish rust-font">Work</span>
-        </div>
+    <section id="our-work" class="our_work">
+      <div class="our_work_title">
+        <span class="span1"> Our </span><span class="span2">Work</span>
       </div>
 
       <div class="whole_swipper_section">
@@ -95,7 +99,7 @@
 
                 <!-- Slide-start -->
                 <div class="swiper-slide swiper-slide">
-                  <a href="blinkist.html">
+                  <a href="9five.html">
                     <div class="swiper-slide-img">
                       <img src="Our Work/5.png" alt="swiper" />
                     </div>
@@ -141,19 +145,19 @@
         </section>
       </div>
     </section>
-
+    <br>
+    <br>
+    <br>
     <!-- Clients  -->
-    <section class="clients width-100">
-      <div class="width-100 flex jc-center">
-        <div
-          class="title_row mb40 mt40 all_title_width_wrapper flex jc-sb ai-center"
-        >
-          <p class="title bluish size rust-font">Clients</p>
+    <section id="clients-section" class="clients">
+      <div class="all_title_width_wrapper">
+        <div class="title_row all_title_width margin_util margin_util">
+          <p class="title">Clients</p>
           <span class="line" id="clients_line"></span>
         </div>
       </div>
-      <div class="clientlist_wrapper width-100 grid flex jc-center">
-        <div class="clientlist all_title_width_wrapper grid">
+      <div class="clientlist_wrapper div_center">
+        <div class="clientlist main_section_block_width">
           <img src="Clients/nba.png" class="client_logo" alt="" />
           <img src="Clients/rdx.png" class="client_logo" alt="" />
           <img src="Clients/ysl.png" class="client_logo" alt="" />
@@ -184,18 +188,15 @@
     </section>
 
     <!-- Services  -->
-    <section class="services width-100">
-      <div class="width-100 flex jc-center">
-        <div
-          class="title_row all_title_width_wrapper flex jc-sb ai-center"
-          id="services-title-row"
-        >
-          <p class="title bluish size rust-font size">Services</p>
+    <section id="services-section" class="services">
+      <div class="all_title_width_wrapper">
+        <div class="title_row all_title_width margin_util">
+          <p class="title">Services</p>
           <span class="line" id="service_line"></span>
         </div>
       </div>
-      <div class="service_block_wrapper flex jc-center">
-        <div class="services_block all_title_width_wrapper grid">
+      <div class="service_block_wrapper div_center">
+        <div class="services_block main_section_block_width">
           <div class="each_service">
             <img
               src="Services Icons/Analytics.png"
@@ -203,7 +204,7 @@
               alt="Analytics"
             />
             <div class="service_body">
-              <p class="service_title rust-font">Analytics</p>
+              <p class="service_title">Analytics</p>
               <p class="service_description">
                 Every business has distinguished data maturity and our solution
                 meets the halfway to unlock the vault of hidden data insights
@@ -219,7 +220,7 @@
               alt="Analytics"
             />
             <div class="service_body">
-              <p class="service_title rust-font">Paid Media</p>
+              <p class="service_title">Paid Media</p>
               <p class="service_description">
                 We identify the hidden layers in your performance marketing
                 funnel and unlock its true growth potential our exclusive
@@ -235,7 +236,7 @@
               alt="Analytics"
             />
             <div class="service_body">
-              <p class="service_title rust-font">Communication</p>
+              <p class="service_title">Communication</p>
               <p class="service_description">
                 Our design process is equipped with data and micro-consumer
                 insights that help in understanding tastes, preferences, and
@@ -252,7 +253,7 @@
               alt="Analytics"
             />
             <div class="service_body">
-              <p class="service_title rust-font">Strategy</p>
+              <p class="service_title">Strategy</p>
               <p class="service_description">
                 At Skyloom, the ﬁrst step for the strategy is empathy and that
                 helps our team in understanding the customer in a more
@@ -270,7 +271,7 @@
               alt="Analytics"
             />
             <div class="service_body">
-              <p class="service_title rust-font">Growth Hacking</p>
+              <p class="service_title">Growth Hacking</p>
               <p class="service_description">
                 Exceptional results demand rapid testing of ideas and that's
                 where we enjoy an edge over the market through testing several
@@ -287,7 +288,7 @@
               alt="Analytics"
             />
             <div class="service_body">
-              <p class="service_title rust-font">Decision Science</p>
+              <p class="service_title">Decision Science</p>
               <p class="service_description">
                 Decision Sciences empower the marketing teams in understanding
                 their audiences better and determine where, how, and when to
@@ -300,19 +301,17 @@
       </div>
     </section>
 
-    <section class="partnerships width-100">
-      <div class="width-100 flex jc-center">
-        <div
-          class="title_row mb40 mt40 all_title_width_wrapper flex jc-sb ai-center"
-        >
-          <p class="title bluish size rust-font size">Partnerships</p>
+    <section class="partnerships">
+      <div class="all_title_width_wrapper">
+        <div class="title_row all_title_width margin_util">
+          <p class="title">Partnerships</p>
           <span class="line" id="partner_line"></span>
         </div>
       </div>
 
       <!-- Partnerships  -->
-      <div class="partner_wrapper width-100 flex jc-center">
-        <div class="partners all_title_width_wrapper grid">
+      <div class="partner_wrapper div_center">
+        <div class="partners main_section_block_width">
           <img src="Partnerships/fb.png" class="partners_logo" alt="Facebook" />
           <img
             src="Partnerships/tiktok.png"
@@ -350,30 +349,22 @@
     </section>
 
     <!-- Let's talk  -->
-    <section class="lets_talk width-100">
-      <div class="footer-img-wrapper">
-        <img
-          src="Let's Talk and Footer Backkround.png"
-          alt="Image"
-          class="footer_img width-100"
-        />
-      </div>
-      <div class="footer-title-wrapper width-100 flex jc-center">
-        <div
-          class="title_row all_title_width_wrapper flex jc-sb ai-center rust-font size"
-        >
-          <p class="span-lets">
-            Let's <span class="span2 bluish"> Talk </span>
-          </p>
-          <span class="line" id="letstalk_line"></span>
+    <section id="letstalk-section" class="lets_talk"> 
+      <img
+        src="Let's Talk and Footer Backkround.png"
+        alt="Image"
+        class="footer_img"
+      />
+      <div class="all_title_width_wrapper lets_talk_padding">
+        <div class="title_row footer_title all_title_width margin_util">
+          <p class="span1">Let's <span class="span2"> Talk </span></p>
+          <span class="line"></span>
         </div>
       </div>
-      <div class="footertop_wrapper width-100 flex jc-center">
-        <div class="footer_top all_title_width_wrapper flex jc-sb ai-center">
-          <div class="lets-talk-img-wrapper">
-            <img src="Let's Talk.png" alt="Image" class="lets_talk_img" />
-          </div>
-          <form>
+      <div class="footertop_wrapper div_center">
+        <div class="footer_top">
+          <img src="Let's Talk1.png" alt="Image" class="lets_talk_img" />
+          <form action="https://formspree.io/f/mqkoopdz" method="POST">
             <div class="each_from_section">
               <label for="name" class="labels">Name</label><br />
               <div class="input_wrapper">
@@ -382,6 +373,7 @@
                   id="name"
                   class="input_field"
                   placeholder="Bob"
+                  name="name" <!-- Added name attribute -->
                 />
               </div>
             </div>
@@ -393,107 +385,84 @@
                   id="email"
                   class="input_field"
                   placeholder="xyz@example.com"
+                  name="email" <!-- Added name attribute -->
                 />
               </div>
             </div>
             <div class="each_from_section">
               <label for="scope" class="labels">Project Scope</label><br />
               <div id="scope_wrapper">
-                <textarea class="scope"></textarea>
+                <textarea class="scope" name="message"></textarea> <!-- Added name attribute -->
               </div>
             </div>
             <button type="submit" value="submit" id="submit_btn">Submit</button>
           </form>
         </div>
       </div>
-      <div class="footer_wrapper width-100 flex jc-center">
-        <section class="footer all_title_width_wrapper flex jc-sb">
-          <div class="footer_divs footer_contact flex flex-c">
-            <p class="footer_div_title bluish rust-font bluish rust-font">
-              Contact
-            </p>
-            <div class="each_contact flex ai-center">
-              <img
-                src="Call to Action in footer/location.png"
-                class="footer_icon"
-                alt="Location"
-              />
-              <p class="contact_text">Saudia Arab, Riyadh, Exit 7</p>
-            </div>
-
-            <div class="each_contact flex ai-center">
-              <div class="footer-icon-wrapper">
-                <img
-                  src="Call to Action in footer/email.png"
-                  class="footer_icon"
-                  alt="Email"
-                />
-              </div>
-              <p class="contact_text">hello@qiratven.com</p>
-            </div>
-
-            <div class="each_contact flex ai-center">
-              <div class="footer-icon-wrapper">
-                <img
-                  src="Call to Action in footer/whatsapp.png"
-                  class="footer_icon"
-                  alt="Whatsapp"
-                />
-              </div>
-              <p class="contact_text">+966594542796</p>
-            </div>
-          </div>
-          <div class="footer_divs footer_explore">
-            <p class="footer_div_title bluish rust-font">Explore</p>
-            <p class="footer_text explore_text">Contact</p>
-            <p class="footer_text explore_text">About</p>
-            <p class="footer_text explore_text">Services</p>
-            <p class="footer_text explore_text">Clients</p>
-          </div>
-          <div class="footer_divs footer_services">
-            <p class="footer_div_title bluish rust-font">Services</p>
-            <p class="footer_text servives_text">Paid Media</p>
-            <p class="footer_text servives_text">Growth Hacking</p>
-            <p class="footer_text servives_text">Strategy</p>
-            <p class="footer_text servives_text">Communication</p>
-            <p class="footer_text servives_text">Decision Sciences</p>
-          </div>
-        </section>
-      </div>
-      <div class="bottom_footer_wrapper width-100 flex jc-center">
-        <section
-          class="bottom_footer all_title_width_wrapper flex jc-sb ai-center"
-        >
-          <div class="footer-logo-wrapper">
-            <img src="First page/logo.png" alt="Logo" class="bottom_logo" />
-          </div>
-          <div class="bottom_footer_logo flex">
-            <img
-              src="Social Icons/facebook.png"
-              class="each_bottom_footer_logo"
-              alt="Facebook"
-            />
-            <img
-              src="Social Icons/tiktok.png"
-              class="each_bottom_footer_logo"
-              alt="tiktok"
-            />
-            <img
-              src="Social Icons/linkedin.png"
-              class="each_bottom_footer_logo"
-              alt="linkedin"
-            />
-            <img
-              src="Social Icons/insta.png"
-              class="each_bottom_footer_logo"
-              alt="insta"
-            />
-          </div>
-        </section>
-      </div>
-      <p class="rust-font" id="footer_tagline">A Qirat Ventures Company.</p>
     </section>
 
+    <div class="footer_wrapper div_center">
+      <section class="footer">
+        <div class="footer_divs footer_contact">
+          <p class="footer_div_title">Contact</p>
+          <div class="each_contact">
+            <img
+              src="Call to Action in footer/location.png"
+              class="footer_icon"
+              alt="Location"
+            />
+            <p class="contact_text">Saudia Arab, Riyadh, Exit 7</p>
+          </div>
+
+          <div class="each_contact">
+            <img
+              src="Call to Action in footer/email.png"
+              class="footer_icon"
+              alt="Email"
+            />
+            <p class="contact_text">hello@qiratven.com</p>
+          </div>
+
+          <div class="each_contact">
+            <img
+              src="Call to Action in footer/whatsapp.png"
+              class="footer_icon"
+              alt="Whatsapp"
+            />
+            <p class="contact_text">+966594542796</p>
+          </div>
+        </div>
+        <div class="footer_divs footer_explore">
+          <p class="footer_div_title">Explore</p>
+          <p class="footer_text explore_text">Contact</p>
+          <p class="footer_text explore_text">About</p>
+          <p class="footer_text explore_text">Services</p>
+          <p class="footer_text explore_text">Clients</p>
+        </div>
+        <div class="footer_divs footer_services">
+          <p class="footer_div_title">Services</p>
+          <p class="footer_text servives_text">Paid Media</p>
+          <p class="footer_text servives_text">Growth Hacking</p>
+          <p class="footer_text servives_text">Strategy</p>
+          <p class="footer_text servives_text">Communication</p>
+          <p class="footer_text servives_text">Decision Sciences</p>
+        </div>
+      </section>
+    </div>
+    <div class="bottom_footer_wrapper div_center">
+      <section class="bottom_footer">
+        <img src="First page/logo.png" alt="Logo" class="bottom_logo" />
+        <div class="bottom_footer_logo">
+          <div class="bottom_footer_logo">
+            <img src="Social Icons/facebook.png" class="each_bottom_footer_logo" alt="Facebook" />
+            <img src="Social Icons/tiktok.png" class="each_bottom_footer_logo" alt="tiktok" />
+            <img src="Social Icons/linkedin.png" class="each_bottom_footer_logo" alt="linkedin" />
+            <img src="Social Icons/insta.png" class="each_bottom_footer_logo" alt="insta" />
+          </div>
+      </section>
+    </div>
+
+    <p id="footer_tagline">A Qirat Ventures Company.</p>
     <script
       type="module"
       src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -607,5 +576,40 @@
           console.log("Advanced button was pressed");
         });
     </script>
+    <script>
+      function scrollToBottom() {
+  window.scrollTo({
+    top: document.body.scrollHeight,
+    behavior: 'smooth'
+  });
+}
+
+
+    </script>
+    <script>
+       
+
+$(document).ready(function() {
+  var popupVisible = false;
+  $('.material-symbols-outlined.menu').click(function() {
+    if (popupVisible) {
+      $('.popup-image').fadeOut();
+      popupVisible = false;
+    } else {
+      $('.popup-image').fadeIn();
+      popupVisible = true;
+    }
+  });
+
+  $(document).click(function(event) {
+    if (!$(event.target).closest('.navbar').length) {
+      $('.popup-image').fadeOut();
+      popupVisible = false;
+    }
+  });
+});
+    </script>
+        <script src="menu.js"></script>
+
   </body>
 </html>

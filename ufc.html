@@ -4,23 +4,51 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>UFC</title>
+    <link rel="icon" href="favicon.png" type="image/png" />
+    <link rel="stylesheet" href="skyloom.css" />
+    <link rel="stylesheet" href="swiper.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+    />
+ 
+    <title>ufc</title>
     <link rel="stylesheet" href="skyloom.css" />
     <link rel="stylesheet" href="casestudy.css" />
+    <link rel="stylesheet" href="blinkest.css" />
+    <link rel="stylesheet" href="menu.css">
+
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
     />
   </head>
-  <body>
+  <body class="casestudy blinkist">
     <section class="first_page">
       <img src="UFC/UFC.png" alt="image" class="header_img" />
-      <nav class="navbar">
+      <nav class="navbar all_title_width_wrapper all_title_width">
         <img src="First page/logo.png" alt="Logo" class="logo" />
-        <span class="material-symbols-outlined menu"> menu </span>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <ul class="item">
+          <li><a class="nav-item" href="index.html">Home</a></li>
+          <li><a class="nav-item" href="#clients-section">CLIENT</a></li>
+          <li><a class="nav-item" href="#services-section">SERVICES</a></li>
+          <li><a class="nav-item" href="#casetudy-section">CASES </a></li>
+          <li><a class="nav-item" href="#letstalk-section"> LET'S TALK</a></li>
+        </ul>
+      </nav>
       </nav>
     </section>
-    <div class="company width_util">
+
+    <div class="company width_util padding">
       <header class="header">UFC</header>
       <p class="para company_para section_description">
         The Ultimate Fighting Championship is an American mixed martial arts
@@ -28,33 +56,41 @@
       </p>
     </div>
 
-    <div class="card_wrapper width_util">
-      <div class="card_block">
-        <img src="Our Work/8.png" class="yellow_spot" alt="Image" />
-        <div class="phone_wrapper width_util">
-          <div class="phone">
-            <img src="UFC/12.png" class="card_image" alt="Image" />
-          </div>
-          <div class="phone">
-            <img
-              src="UFC/10.png"
-              class="card_image center_card_image"
-              alt="Image"
-            />
-          </div>
-          <div class="phone">
-            <img src="UFC/11.png" class="card_image" alt="Image" />
+    <section class="our_work">
+
+      <div class="card_wrapper width_util padding">
+        <div class="card_block">
+          <img src="Our Work/8.png" class="yellow_spot" alt="Image" />
+          <div class="phone_wrapper width_util">
+            <div class="phone">
+              <img src="UFC/12.png" class="card_image" alt="Image" />
+            </div>
+            <div class="phone">
+              <img
+                src="UFC/10.png"
+                class="card_image center_card_image"
+                alt="Image"
+              />
+            </div>
+            <div class="phone">
+              <img src="UFC/11.png" class="card_image" alt="Image" />
+            </div>
           </div>
         </div>
       </div>
-    </div>
-
-    <section class="whole_description_block_wrapper width_util">
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
       <!-- Stats  -->
-      <section class="stats">
+      <section class="stats padding">
         <div class="each_stat">
           <p class="percentage">60%</p>
-          <p class="stat_description">reduction in CPA (vs target)</p>
+          <p class="stat_description">
+            reduction in CPA (vs target)
+          </p>
         </div>
         <div class="each_stat">
           <p class="percentage">40%</p>
@@ -64,180 +100,160 @@
         </div>
         <div class="each_stat">
           <p class="percentage">47%</p>
-          <p class="stat_description">
-            increase in retargeting conversion rate
-          </p>
+          <p class="stat_description">            increase in retargeting conversion rate
+        </p>
         </div>
+     
       </section>
 
       <!-- The Challenges  -->
-      <section class="main_description">
+      <section class="main_description padding">
         <div class="challenge each_main_description_block">
           <p class="section_title">The Challenge</p>
-          <div class="section_description">
-            <p class="para">
-              Skyloom’s work with UFC Fight Pass in 2020/21 delivered a 30%
-              increase in subscriptions at a cost per acquisition (CPA) 60%
-              lower than the pre-campaign target.
-            </p>
-            <p class="para">
-              However, new challenges quickly emerged in 2022, calling for an
-              adapted strategy. Russia’s invasion of Ukraine brought sanctions –
-              most notably the freezing of the SWIFT payment system in Russia –
-              that would translate into a projected 25% loss in the subscriber
-              base in a core UFC market and hit projections for growth in the
-              year ahead.
-            </p>
-            <p class="para">
-              Rising gas prices that resulted from the conflict also accelerated
-              a global cost of living crisis, increasing pressure on consumer
-              spending power and making discretionary purchases such as OTT
-              subscriptions less attractive to general audiences. This was
-              especially problematic in markets with solid UFC coverage
-              elsewhere through media rights partners.
-            </p>
-            <p class="para">
-              This necessitated a recalibrated campaign with a focus on highly
-              engaged UFC fans in historically underserved territories.
-            </p>
-          </div>
+          <p class="section_description">
+            Skyloom’s work with UFC Fight Pass in 2020/21 delivered a 30%
+            increase in subscriptions at a cost per acquisition (CPA) 60%
+            lower than the pre-campaign target.
+            <br>
+            <br>
+
+            However, new challenges quickly emerged in 2022, calling for an
+            adapted strategy. Russia’s invasion of Ukraine brought sanctions –
+            most notably the freezing of the SWIFT payment system in Russia –
+            that would translate into a projected 25% loss in the subscriber
+            base in a core UFC market and hit projections for growth in the
+            year ahead.
+            <br>
+            <br>
+            Rising gas prices that resulted from the conflict also accelerated
+            a global cost of living crisis, increasing pressure on consumer
+            spending power and making discretionary purchases such as OTT
+            subscriptions less attractive to general audiences. This was
+            especially problematic in markets with solid UFC coverage
+            elsewhere through media rights partners.
+            <br>
+            <br>
+            This necessitated a recalibrated campaign with a focus on highly
+            engaged UFC fans in historically underserved territories.
+            
+          </p>
         </div>
         <div class="solution each_main_description_block">
           <p class="section_title">The Solution</p>
-          <div class="section_description">
-            <p class="para">
-              We began by filling out the picture of the UFC’s international
-              audience using platform, panel-based and partner insights.
-            </p>
-            <p class="para">
-              The goal was to identify territories with a strong UFC and mixed
-              martial arts (MMA) fanbase. However, we wanted to prioritise
-              markets with low barriers to entry for a dedicated SVOD product –
-              such as an absence of local TV deals – and where UFC Fight Pass
-              would be produced in local languages and carry coverage of MMA
-              events from regional partners.
-            </p>
-            <p class="para">
-              We then overlaid a consolidated list of target markets with those
-              where core biddable platforms from companies like Meta and Google
-              were in heavy use. We also planned campaigns that would reach
-              those markets at moments of peak interest in UFC Fight Pass, such
-              as in the build-up to major fight nights or locally relevant
-              promotions such as UFC London.
-            </p>
-            <p class="para">
-              Creative assets were adapted to foreground regional stars like
-              Israel Adesanya in Australia or Paddy Pimblett in the UK, while
-              social content was also translated into the languages that UFC
-              Fight Pass was available in locally.
-            </p>
-            <p class="para">
-              We then optimised campaigns to enable more effective retargeting,
-              prioritising social and search platforms that had historically
-              delivered better conversion rates. We developed video content at
-              three different lengths for the first half of 2022 – at 15
-              seconds, 30 seconds and 60 seconds – and used watch times to sort
-              tagged viewers by levels of engagement.
-            </p>
-            <p class="para">
-              We then retargeted those viewers with paid social campaigns and
-              programmatic videos to turn the strongest prospects into
-              subscribers.
-            </p>
-          </div>
-        </div>
+          <p class="section_description">
+            We began by filling out the picture of the UFC’s international
+            audience using platform, panel-based and partner insights.
+            <br>
+            <br>
+            The goal was to identify territories with a strong UFC and mixed
+            martial arts (MMA) fanbase. However, we wanted to prioritise
+            markets with low barriers to entry for a dedicated SVOD product –
+            such as an absence of local TV deals – and where UFC Fight Pass
+            would be produced in local languages and carry coverage of MMA
+            events from regional partners.
+            <br>
+            <br>
+            We then overlaid a consolidated list of target markets with those
+            where core biddable platforms from companies like Meta and Google
+            were in heavy use. We also planned campaigns that would reach
+            those markets at moments of peak interest in UFC Fight Pass, such
+            as in the build-up to major fight nights or locally relevant
+            promotions such as UFC London.
+          
+          
+            <br>
+            <br>
+            Creative assets were adapted to foreground regional stars like
+            Israel Adesanya in Australia or Paddy Pimblett in the UK, while
+            social content was also translated into the languages that UFC
+            Fight Pass was available in locally.
+        
+            <br>
+            <br>
+            We then optimised campaigns to enable more effective retargeting,
+            prioritising social and search platforms that had historically
+            delivered better conversion rates. We developed video content at
+            three different lengths for the first half of 2022 – at 15
+            seconds, 30 seconds and 60 seconds – and used watch times to sort
+            tagged viewers by levels of engagement.
+            <br>
+            <br>
+            We then retargeted those viewers with paid social campaigns and
+            programmatic videos to turn the strongest prospects into
+            subscribers.
+          
+      </div>
         <div class="result each_main_description_block">
           <p class="section_title">The Results</p>
           <div class="section_description">
-            The partnership has proven to be a global success, with a record
-            number of subscriptions to the platform. By combining strategy,
-            media, and technology we have achieved the above mentioned results.
+            <p class="para1">
+                The partnership has proven to be a global success, with a record
+                number of subscriptions to the platform. By combining strategy,
+                media, and technology we have achieved the above mentioned results.
+         
+              
+            </p>
           </div>
         </div>
       </section>
+
     </section>
-
     <!-- Footer  -->
-    <section class="lets_talk case_study_footer">
-      <img
-        src="Let's Talk and Footer Backkround.png"
-        alt="Image"
-        class="footer_img"
-      />
+   <br>
+   <br>
+      <br>
+      <div class="footer_wrapper div_center case_study_footer">
+         <img src="Let's Talk and Footer Backkround.png" alt="Image" class="footer_img" />
+        <section class="footer">
+          <div class="footer_divs footer_contact">
+            <p class="footer_div_title">Contact</p>
+            <div class="each_contact">
+              <img src="Call to Action in footer/location.png" class="footer_icon" alt="Location" />
+              <p class="contact_text">Saudia Arab, Riyadh, Exit 7</p>
+            </div>
 
-      <section class="footer">
-        <div class="footer_divs footer_contact">
-          <p class="footer_div_title">Contact</p>
-          <div class="each_contact">
-            <img
-              src="Call to Action in footer/location.png"
-              class="footer_icon"
-              alt="Location"
-            />
-            <p class="contact_text">Saudia Arab, Riyadh, Exit 7</p>
-          </div>
+            <div class="each_contact">
+              <img src="Call to Action in footer/email.png" class="footer_icon" alt="Email" />
+              <p class="contact_text">hello@qiratven.com</p>
+            </div>
 
-          <div class="each_contact">
-            <img
-              src="Call to Action in footer/email.png"
-              class="footer_icon"
-              alt="Email"
-            />
-            <p class="contact_text">hello@qiratven.com</p>
+            <div class="each_contact">
+              <img src="Call to Action in footer/whatsapp.png" class="footer_icon" alt="Whatsapp" />
+              <p class="contact_text">+966594542796</p>
+            </div>
           </div>
+          <div class="footer_divs footer_explore">
+            <p class="footer_div_title">Explore</p>
+            <p class="footer_text explore_text">Contact</p>
+            <p class="footer_text explore_text">About</p>
+            <p class="footer_text explore_text">Services</p>
+            <p class="footer_text explore_text">Clients</p>
+          </div>
+          <div class="footer_divs footer_services">
+            <p class="footer_div_title">Services</p>
+            <p class="footer_text servives_text">Paid Media</p>
+            <p class="footer_text servives_text">Growth Hacking</p>
+            <p class="footer_text servives_text">Strategy</p>
+            <p class="footer_text servives_text">Communication</p>
+            <p class="footer_text servives_text">Decision Sciences</p>
+          </div>
+        </section>
+      </div>
+      <div class="bottom_footer_wrapper div_center">
+        <section class="bottom_footer">
+          <img src="First page/logo.png" alt="Logo" class="bottom_logo" />
+          <div class="bottom_footer_logo">
+            <img src="Social Icons/facebook.png" class="each_bottom_footer_logo" alt="Facebook" />
+            <img src="Social Icons/tiktok.png" class="each_bottom_footer_logo" alt="tiktok" />
+            <img src="Social Icons/linkedin.png" class="each_bottom_footer_logo" alt="linkedin" />
+            <img src="Social Icons/insta.png" class="each_bottom_footer_logo" alt="insta" />
+          </div>
+        </section>
+      </div>
 
-          <div class="each_contact">
-            <img
-              src="Call to Action in footer/whatsapp.png"
-              class="footer_icon"
-              alt="Whatsapp"
-            />
-            <p class="contact_text">+966594542796</p>
-          </div>
-        </div>
-        <div class="footer_divs footer_explore">
-          <p class="footer_div_title">Explore</p>
-          <p class="footer_text explore_text">Contact</p>
-          <p class="footer_text explore_text">About</p>
-          <p class="footer_text explore_text">Services</p>
-          <p class="footer_text explore_text">Clients</p>
-        </div>
-        <div class="footer_divs footer_services">
-          <p class="footer_div_title">Services</p>
-          <p class="footer_text servives_text">Paid Media</p>
-          <p class="footer_text servives_text">Growth Hacking</p>
-          <p class="footer_text servives_text">Strategy</p>
-          <p class="footer_text servives_text">Communication</p>
-          <p class="footer_text servives_text">Decision Sciences</p>
-        </div>
-      </section>
-      <section class="bottom_footer">
-        <img src="First page/logo.png" alt="Logo" class="bottom_logo" />
-        <div class="bottom_footer_logo">
-          <img
-            src="Social Icons/facebook.png"
-            class="each_bottom_footer_logo"
-            alt="Facebook"
-          />
-          <img
-            src="Social Icons/tiktok.png"
-            class="each_bottom_footer_logo"
-            alt="tiktok"
-          />
-          <img
-            src="Social Icons/linkedin.png"
-            class="each_bottom_footer_logo"
-            alt="linkedin"
-          />
-          <img
-            src="Social Icons/insta.png"
-            class="each_bottom_footer_logo"
-            alt="insta"
-          />
-        </div>
-      </section>
       <p id="footer_tagline">A Qirat Ventures Company.</p>
     </section>
+    <script src="menu.js"></script>
+
   </body>
 </html>
-<!-- testing -->
