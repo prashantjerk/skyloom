@@ -158,6 +158,7 @@
   height: 672px;
   border-radius: 32px;
   object-fit: cover;
+  margin-top: -47px;
 }
 
 .swiper-slide .swiper-slide-content {

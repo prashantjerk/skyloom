@@ -15,7 +15,7 @@
 }
 .case_study_footer .footer_img {
   width: 100vw;
-  height: 700px;
+  height: 633px;
   object-fit: cover;
   position: absolute;
   top: 0;
@@ -46,6 +46,13 @@
   height: 400px;
   aspect-ratio: 1/1;
   object-fit: cover;
+}
+
+.card_image1 {
+  height: 400px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  margin-left: -62px;
 }
 
 .center_card_image {

@@ -135,16 +135,16 @@ body {
 
 .services_block .each_service {
   border: 0.3125rem white solid;
-  height: 31.25rem;
+  height: 24.25rem;
   border-radius: 0.9375rem;
   position: relative;
 }
 
 .each_service .service_icon {
   position: absolute;
-  left: 2.625rem;
+  left: 1.625rem;
   top: -9rem;
-  height: 15.125rem;
+  height: 17.125rem;
   aspect-ratio: 1/1;
   object-fit: cover;
 }
@@ -155,7 +155,7 @@ body {
 
 .each_service .service_body {
   position: absolute;
-  top: 11.25rem;
+  top: 8.25rem;
   padding-left: 1.25rem;
   padding-right: 1.25rem;
 }
@@ -195,7 +195,20 @@ body {
 }
 
  .line {
-  width: 100vw;
+  width: 71vw;
+  height: 0.5rem;
+  border-radius: 0.125rem;
+  background-color: var(--bluish-color);
+}
+
+.line2 {
+  width: 61vw;
+  height: 0.5rem;
+  border-radius: 0.125rem;
+  background-color: var(--bluish-color);
+}
+.line3 {
+  width: 74vw;
   height: 0.5rem;
   border-radius: 0.125rem;
   background-color: var(--bluish-color);
@@ -237,7 +250,7 @@ body {
 
 .footer_top .lets_talk_img {
   margin-left: 0;
-  margin-top:-47px;
+  margin-top:10px;
   height: 31.25rem;
   aspect-ratio: 1/1;
   object-fit: cover;
@@ -310,6 +323,7 @@ form #submit_btn {
   width: 100vw;
   display: flex;
   justify-content: space-around;
+  margin-left: -118px;
 }
 
 .footer .footer_divs {
@@ -385,8 +399,10 @@ form #submit_btn {
     display: flex;
     height: 2.375rem;
     align-items: center;
-    margin-bottom: 15px;
-  }
+    margin-bottom: 13px;
+    margin-left: 9px;
+}
+  
 
 .footer_divs > .footer_text {
   margin-bottom: 9px;
@@ -408,7 +424,10 @@ form #submit_btn {
  .contact_text,
  .footer_divs>.footer_text {
    font-size: 1vw;
- }
+   
+   margin-left: 7px;
+   }
+ 
  .each_contact .footer_icon {
    height: 20px;
    width: 20px;
@@ -534,10 +553,10 @@ form #submit_btn {
 
   .tagline .second_tagline {
     color: white;
-    font-size: 2.0vw;
+    font-size: 1vw;
     margin-top: 0.3125rem;
     letter-spacing: 0.0625rem;
-    word-spacing: 0.3125rem;
+    word-spacing: 0px;
     font-family: var(--secondary-font), sans-serif;
   }
 
@@ -565,7 +584,7 @@ form #submit_btn {
   }
   
   .first_page .header_img {
-    margin-top: -2.1875rem;
+    margin-top: -10.1875rem;
     background-position: center;
     height: 100vh;
     width: 100vw;
@@ -698,7 +717,7 @@ form #submit_btn {
 
 @media screen and (min-width: 1024px) {
   .clients .clientlist {
-    column-gap: 75px;
+    column-gap: 69px;
   }
 }
 .each_from_section {
@@ -719,7 +738,7 @@ form #submit_btn {
   height: 4.875rem;
   width: 8.875rem;
   object-fit: cover;
-  margin-left: 23px;
+  margin-left: -11px;
 }
 
 .bottom_footer_logo {
@@ -777,5 +796,14 @@ form #submit_btn {
 .margin_util{
 margin-top: -37px;
 margin-bottom: 75px;
+
 }
+
+.margin_util2{
+  margin-top: -37px;
+  margin-bottom: 75px;
+  margin-left: -14px;
+  
+  }
+  
 
