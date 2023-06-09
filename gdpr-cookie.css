@@ -61,3 +61,14 @@
 .gdprcookie-types input[type="checkbox"] {
   margin-right: 0.25rem;
 }
+.gdprcookie {
+  position: fixed;
+  z-index: 9999;
+  /* Other styles */
+}
+
+.content {
+  position: relative;
+  z-index: 1;
+  /* Other styles */
+}

@@ -91,6 +91,7 @@
   font-family: var(--primary-font), sans-serif;
   color: var(--bluish-color);
   font-size: 2rem;
+  margin-top:  -207px;
 }
 .whole_description_block_wrapper {
   margin-top: 70px;
@@ -106,6 +107,18 @@
 .each_main_description_block {
   margin-top: 50px;
 }
+
+.each_main_description_block2 {
+  margin-top: -126px;
+}
+.each_main_description_block3 {
+  margin-top: -126px;
+}
+.each_main_description_block4 {
+  margin-top: -126px;
+}
+
+
 
 .section_title {
   font-family: var(--primary-font), sans-serif;
